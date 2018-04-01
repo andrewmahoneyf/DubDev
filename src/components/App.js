@@ -14,6 +14,8 @@ import PageNotFound from './pages/PageNotFound';
 import '../styles/App.scss';
 import '../styles/Fontawesome.scss';
 import * as routes from '../constants/routes';
+import '../jsx/navbar.js';
+import '../jsx/smoothScroll.js';
 
 
 export default class App extends Component {
@@ -34,7 +36,7 @@ export default class App extends Component {
 class Main extends React.Component {
   render() {
     return (
-      <main>
+      <main id='top'>
         <Switch>
           <Route exact path={routes.LANDING} component={Home} />
           <Route path={routes.ABOUT} component={About} />

@@ -1,5 +1,7 @@
 import React from 'react';
 import $ from 'jquery'
+import { Link } from 'react-router-dom';
+import * as routes from '../../constants/routes';
 
 
 // React-Bootstrap horizonal navagation bar 
@@ -23,8 +25,8 @@ export default class Footer extends React.Component {
             <a href="tel:555-555-5555"><i className="fa fa-phone" aria-label="call" ></i></a>
             <small class="d-block mb-3 text-muted copyright">&copy; DubDev 2017-2018</small>
             <small class="d-block mb-3 text-muted">
-              <a class="text-muted privacy" href="/">Privacy</a>
-              <a class="text-muted" href="/">Terms</a>
+              <Link class="text-muted privacy" to={routes.PRIVACY}>Privacy</Link>
+              <Link class="text-muted" to={routes.TERMS}>Terms</Link>
             </small>
           </div>
           <div class="col-6 col-md">

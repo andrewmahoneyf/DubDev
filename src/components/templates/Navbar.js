@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import * as routes from '../../constants/routes';
 
 // React-Bootstrap horizonal navagation bar 
 export default class Navigation extends React.Component {
@@ -16,20 +17,20 @@ export default class Navigation extends React.Component {
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <Link class="py-2 d-none d-md-inline-block nav-link" to="/"><i className="fa fa-home fa-2x" aria-label="home logo"></i></Link>
+              <Link class="py-2 d-none d-md-inline-block nav-link" to={routes.LANDING}><i className="fa fa-home fa-2x" aria-label="home logo"></i></Link>
             </li>
             <li class="nav-item vcenter">
-              <Link class="py-2 d-none d-md-inline-block nav-link" to="/about">About</Link>
+              <Link class="py-2 d-none d-md-inline-block nav-link" to={routes.ABOUT}>About</Link>
             </li>
             <li class="nav-item vcenter">
-              <Link class="py-2 d-none d-md-inline-block nav-link" to="/team">Team</Link>
+              <Link class="py-2 d-none d-md-inline-block nav-link" to={routes.TEAM}>Team</Link>
             </li>
             <li class="nav-item dropdown vcenter">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Projects</a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="/projects/web">Web Apps</a>
-                <a class="dropdown-item" href="/projects/mobile">Mobile Apps</a>
+                <Link class="dropdown-item" to={routes.WEB_PROJECTS}>Web Apps</Link>
+                <Link class="dropdown-item" to={routes.MOBILE_PROJECTS}>Mobile Apps</Link>
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="#">Something else here</a>
               </div>
@@ -38,7 +39,7 @@ export default class Navigation extends React.Component {
               <a class="nav-link disabled" href="#">Disabled</a>
             </li>
           </ul>
-          <Link class="py-2 d-none d-md-inline-block nav-link" to="/contact">Contact</Link>
+          <Link class="py-2 d-none d-md-inline-block nav-link" to={routes.CONTACT}>Contact</Link>
           <form class="form-inline my-2 my-lg-0">
             <input class="form-control mr-sm-2 " type="search" placeholder="Search" aria-label="Search" />
             <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Search</button>

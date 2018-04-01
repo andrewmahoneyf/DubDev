@@ -2,7 +2,7 @@ import React from 'react';
 import '../../styles/Contact.scss';
 
 
-export class Contact extends React.Component {
+export default class Contact extends React.Component {
   constructor(props) {
     super(props);
     this.handleClick = this.handleClick.bind(this);

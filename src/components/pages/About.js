@@ -2,7 +2,7 @@ import React from 'react';
 import '../../styles/About.scss';
 
 
-export class About extends React.Component {
+export default class About extends React.Component {
   render() {
     return (
       <body class="about">

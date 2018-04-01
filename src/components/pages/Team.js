@@ -1,7 +1,7 @@
 import React from 'react';
 import '../../styles/Team.scss';
 
-export class Team extends React.Component {
+export default class Team extends React.Component {
   render() {
     return (
       <main class="team">

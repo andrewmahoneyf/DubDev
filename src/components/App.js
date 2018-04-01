@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import logo from '../images/logo.svg';
 import { Route, Switch } from 'react-router-dom';
-import { Home } from './pages/Home';
-import { About } from './pages/About';
-import { Team } from './pages/Team';
-import { Contact } from './pages/Contact';
+import Home from './pages/Home';
+import About from './pages/About';
+import Team from './pages/Team';
+import Contact from './pages/Contact';
 import { Web, Mobile } from './pages/Projects';
 import Navigation from './templates/Navbar';
 import Footer from './templates/Footer';

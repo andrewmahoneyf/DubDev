@@ -1,0 +1,9 @@
+export const LANDING = '/';
+export const ABOUT = '/about';
+export const CONTACT = '/contact';
+export const TEAM = '/team';
+export const WEB_PROJECTS = '/projects/mobile';
+export const MOBILE_PROJECTS = '/projects/mobile';
+export const NOT_FOUND = '/404';
+export const PRIVACY = '/privacy-policy';
+export const TERMS = '/terms';

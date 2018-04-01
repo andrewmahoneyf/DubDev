@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import logo from '../images/logo.svg';
-import { Route, Switch } from 'react-router-dom';
+import { Route, Switch, Redirect } from 'react-router-dom';
 import Home from './pages/Home';
 import About from './pages/About';
 import Team from './pages/Team';
@@ -8,8 +8,12 @@ import Contact from './pages/Contact';
 import { Web, Mobile } from './pages/Projects';
 import Navigation from './templates/Navbar';
 import Footer from './templates/Footer';
+import Privacy from './pages/PrivacyPolicy';
+import Terms from './pages/Terms'
+import PageNotFound from './pages/PageNotFound';
 import '../styles/App.scss';
 import '../styles/Fontawesome.scss';
+import * as routes from '../constants/routes';
 
 
 export default class App extends Component {
@@ -32,12 +36,16 @@ class Main extends React.Component {
     return (
       <main>
         <Switch>
-          <Route exact path='/' component={Home} />
-          <Route path='/about' component={About} />
-          <Route path='/team' component={Team} />
-          <Route path='/contact' component={Contact} />
-          <Route path='/projects/web' component={Web} />
-          <Route path='/projects/mobile' component={Mobile} />
+          <Route exact path={routes.LANDING} component={Home} />
+          <Route path={routes.ABOUT} component={About} />
+          <Route path={routes.TEAM} component={Team} />
+          <Route path={routes.CONTACT} component={Contact} />
+          <Route path={routes.WEB_PROJECTS} component={Web} />
+          <Route path={routes.MOBILE_PROJECTS} component={Mobile} />
+          <Route exact path={routes.PRIVACY} component={Privacy}/>
+          <Route exact path={routes.TERMS} component={Terms}/>
+          <Route exact path={routes.NOT_FOUND} component={PageNotFound}/>
+          <Redirect to={routes.NOT_FOUND}/>
         </Switch>
       </main>
     );

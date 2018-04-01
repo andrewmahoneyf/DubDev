@@ -3,7 +3,7 @@ import React from 'react';
 export default class Terms extends React.Component {
     render() {
         return (
-            <main className="terms bg-light">
+            <section className="terms bg-light">
                 <h2 className="pt-5">Big's Contracting Agency Terms of Service</h2>
                 <div className="container text-left">
                     <h3>1. Terms</h3>
@@ -80,7 +80,7 @@ export default class Terms extends React.Component {
                         the laws of Washington and you irrevocably submit to the exclusive jurisdiction
                         of the courts in that State or location.</p>
                 </div>
-            </main>
+            </section>
         );
     }
 }

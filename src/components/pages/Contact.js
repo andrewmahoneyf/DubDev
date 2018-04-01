@@ -18,14 +18,14 @@ export default class Contact extends React.Component {
   }
   render() {
     return (
-      <main class="jumbotron">
+      <section className="jumbotron">
         <h2>Contact Us</h2>
         <p>If you wish to contact us please leave us a message below and we will get back to you as soon as possible!</p>
         <input type="text" placeholder="Name..." id="emailInput" />  <input type="email" placeholder="Email..." id="emailInput" />
         <br /><input type="text" placeholder="Message..." id="emailMessage" />
         <br /><input type="submit" value="Send" id="sendEmail" onClick={this.handleClick} />
         <div id="message" />
-      </main>
+      </section>
     );
   }
 }

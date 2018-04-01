@@ -1,48 +1,48 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import * as routes from '../../constants/routes';
+import logo from '../../images/logo.svg';
+
 
 // React-Bootstrap horizonal navagation bar 
 export default class Navigation extends React.Component {
   render() {
     return (
-      <nav class="navbar navbar-expand-lg fixed-top site-header py-1">
-        <Link class="py-2" to="/">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="d-block mx-auto"><circle cx="12" cy="12" r="10"></circle><line x1="14.31" y1="8" x2="20.05" y2="17.94"></line><line x1="9.69" y1="8" x2="21.17" y2="8"></line><line x1="7.38" y1="12" x2="13.12" y2="2.06"></line><line x1="9.69" y1="16" x2="3.95" y2="6.06"></line><line x1="14.31" y1="16" x2="2.83" y2="16"></line><line x1="16.62" y1="12" x2="10.88" y2="21.94"></line></svg>
-        </Link>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+      <nav className="navbar navbar-expand-md fixed-top site-header py-1" data-toggle="collapse" data-target="#navbarSupportedContent">
+        <Link className="py-2 pl-3" to="/"><img className="logo" src={logo} alt="logo" /></Link>
+        <button className="navbar-toggler mr-1" type="button" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <i className="fa fa-bars" aria-label="toggle"></i>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <Link class="py-2 d-none d-md-inline-block nav-link" to={routes.LANDING}><i className="fa fa-home fa-2x" aria-label="home logo"></i></Link>
+        <div className="collapse navbar-collapse pr-3" id="navbarSupportedContent">
+          <ul className="navbar-nav mr-auto text-right">
+            <li className="nav-item active">
+              <Link className="py-2d-md-inline-block nav-link d-none d-md-block" to={routes.LANDING}><i className="fa fa-home fa-2x" aria-label="home logo"></i></Link>
             </li>
-            <li class="nav-item vcenter">
-              <Link class="py-2 d-none d-md-inline-block nav-link" to={routes.ABOUT}>About</Link>
+            <li className="nav-item vcenter">
+              <Link className="py-2d-md-inline-block nav-link" to={routes.ABOUT}>About</Link>
             </li>
-            <li class="nav-item vcenter">
-              <Link class="py-2 d-none d-md-inline-block nav-link" to={routes.TEAM}>Team</Link>
+            <li className="nav-item vcenter">
+              <Link className="py-2d-md-inline-block nav-link" to={routes.TEAM}>Team</Link>
             </li>
-            <li class="nav-item dropdown vcenter">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <li className="nav-item dropdown vcenter">
+              <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Projects</a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <Link class="dropdown-item" to={routes.WEB_PROJECTS}>Web Apps</Link>
-                <Link class="dropdown-item" to={routes.MOBILE_PROJECTS}>Mobile Apps</Link>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>
+              <div className="dropdown-menu" aria-labelledby="navbarDropdown">
+                <Link className="dropdown-item" to={routes.WEB_PROJECTS}>Web Apps</Link>
+                <Link className="dropdown-item" to={routes.MOBILE_PROJECTS}>Mobile Apps</Link>
+                <div className="dropdown-divider"></div>
+                <a className="dropdown-item" href="#">Something else here</a>
               </div>
             </li>
-            <li class="nav-item vcenter">
-              <a class="nav-link disabled" href="#">Disabled</a>
+            <li className="nav-item vcenter">
+              <a className="nav-link disabled" href="#">Disabled</a>
             </li>
           </ul>
-          <Link class="py-2 d-none d-md-inline-block nav-link" to={routes.CONTACT}>Contact</Link>
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2 " type="search" placeholder="Search" aria-label="Search" />
-            <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Search</button>
+          <Link className="py-2 d-none d-md-inline-block nav-link" to={routes.CONTACT}>Contact</Link>
+          <form className="form-inline my-2 my-lg-0 mr-4 input-group ml-2 ml-md-0">
+            <input className="form-control mr-sm-2 " type="search" placeholder="Search" aria-label="Search" />
+            <button className="btn btn-outline-info my-sm-0" type="submit">Search</button>
           </form>
         </div>
       </nav>

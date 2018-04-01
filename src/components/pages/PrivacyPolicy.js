@@ -3,7 +3,7 @@ import React from 'react';
 export default class Privacy extends React.Component {
     render() {
         return (
-            <main className="privacy bg-light">
+            <section className="privacy bg-light">
                 <h2 id="ppHeader" className="pt-5">Big's Contracting Agency Privacy Policy</h2><br/>
                 <div className="container text-left">
                     <div>
@@ -319,7 +319,7 @@ export default class Privacy extends React.Component {
                         <div className="innerText"><br/>Last Edited on 2018-03-22</div>
                     </div>
                 </div>
-            </main>
+            </section>
         );
     }
 }

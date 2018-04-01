@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from '../images/logo.svg';
 import { Route, Switch, Redirect } from 'react-router-dom';
 import Home from './pages/Home';
 import About from './pages/About';
@@ -22,7 +21,7 @@ export default class App extends Component {
   render() {
     return (
       <div className="App">
-        <header id="navigation" role="navigation" >
+        <header className="bg-dark" id="navigation" role="navigation" >
           <Navigation />
         </header>
         <Main />
@@ -36,7 +35,7 @@ export default class App extends Component {
 class Main extends React.Component {
   render() {
     return (
-      <main id='top'>
+      <main id='top' role="main">
         <Switch>
           <Route exact path={routes.LANDING} component={Home} />
           <Route path={routes.ABOUT} component={About} />

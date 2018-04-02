@@ -1,36 +1,68 @@
 import React from 'react';
-import '../../styles/Team.scss';
+import andrew from '../../images/andrew.png';
+import james from '../../images/james.png';
+
 
 export default class Team extends React.Component {
   render() {
     return (
-      <section className="team">
+      <section className="team bg-light">
         <div className="jumbotron p-3 p-md-5 text-white bg-dark">
           <div className="col-md-6 px-0 container">
-            <h1 className="display-4 font-italic">Title of a longer featured blog post</h1>
-            <p className="lead my-3">Multiple lines of text that form the lede, informing new readers quickly and efficiently about what's most interesting in this post's contents.</p>
-            <p className="lead mb-0"><a href="/" className="text-white font-weight-bold">Continue reading...</a></p>
+            <h1 className="display-4">Meet Our Developers</h1>
+            <p className="lead my-3">Our team has a wide range of knowledge and experience in web development. Check out their sites below to learn more about DubDev's founders.</p>
           </div>
         </div>
-        <div className="container team">
-          <div className="row">
-            <div className="col-lg-4">
-              <img className="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder " width="140" height="140" />
-              <h2>Heading</h2>
-              <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-              <p><a className="btn btn-secondary" href="/" role="button">View details &raquo;</a></p>
+
+        <div className="container">
+          <div class="row text-center equal">
+            <div class="col-md-6 mb-0 mb-md-4 p-5">
+              <div class="card card-body">
+                <div class="avatar mx-auto my-3">
+                  <img src={andrew} class="rounded-circle img-fluid" alt="Andrew's avatar " />
+                </div>
+                <h5 class="font-weight-bold">
+                  <strong>Andrew Mahoney-Fernandes</strong>
+                </h5>
+                <p class="grey-text">Co-Founder / Head of Front-End Development</p>
+                <p>Andrew is a senior at the University of Washington with a strong background in web development. He has experience monitoring and building complex websites, with several internships to date for various companies as well as the University of Washington.</p>
+
+                <ul class="list-unstyled">
+                  <a class="icons-sm fb-ic" href="https://github.com/andrewmahoneyf" target="_blank" rel="noopener noreferrer">
+                    <i class="fa fa-github blue-text"> </i>
+                  </a>
+                  <a class="icons-sm ins-ic" href="https://www.linkedin.com/in/amahoneyfernandes/" target="_blank" rel="noopener noreferrer">
+                    <i class="fa fa-linkedin blue-text"> </i>
+                  </a>
+                  <a class="icons-sm ins-ic" href="https://andrewmf.com/" target="_blank" rel="noopener noreferrer">
+                    <i class="fa fa-globe blue-text"> </i>
+                  </a>
+                </ul>
+              </div>
             </div>
-            <div className="col-lg-4">
-              <img className="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder" width="140" height="140" />
-              <h2>Heading</h2>
-              <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-              <p><a className="btn btn-secondary" href="/" role="button">View details &raquo;</a></p>
-            </div>
-            <div className="col-lg-4">
-              <img className="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder" width="140" height="140" />
-              <h2>Heading</h2>
-              <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-              <p><a className="btn btn-secondary" href="/" role="button">View details &raquo;</a></p>
+
+            <div class="col-md-6 mb-4 p-5">
+              <div class="card card-body">
+                <div class="avatar mx-auto my-3">
+                  <img src={james} class="rounded-circle img-fluid" alt="James' avatar" />
+                </div>
+                <h5 class="font-weight-bold">
+                  <strong>James Sanghawk Lee</strong>
+                </h5>
+                <p class="grey-text">Co-Founder / Head of Back-End Development</p>
+                <p>James eats weiners! Dogs and pene! HA Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+                <ul class="list-unstyled">
+                  <a class="icons-sm fb-ic" href="https://github.com/Sanghawk" target="_blank" rel="noopener noreferrer">
+                    <i class="fa fa-github blue-text"> </i>
+                  </a>
+                  <a class="icons-sm ins-ic" href="https://www.linkedin.com/in/james-lee-5a992a115/" target="_blank" rel="noopener noreferrer">
+                    <i class="fa fa-linkedin blue-text"> </i>
+                  </a>
+                  <a class="icons-sm ins-ic" href="" target="_blank" rel="noopener noreferrer">
+                    <i class="fa fa-globe blue-text"> </i>
+                  </a>
+                </ul>
+              </div>
             </div>
           </div>
         </div>

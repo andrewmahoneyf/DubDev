@@ -3,13 +3,13 @@ import $ from 'jquery';
 //transparent scrollbar
 $(window).scroll(function () {
     if ($(document).scrollTop() > 50) {
-        $('.navbar-dark').removeClass('transparent');
-        $('.navbar-dark').addClass('bg-dark');
-        $('.navbar-brand').addClass('transparentbrand');
+        $('.navbar').removeClass('transparent');
+        $('.navbar').addClass('bg-dark2');
+        $('.navbar').addClass('transparentbrand');
     } else {
-        $('.navbar-dark').addClass('transparent');
-        $('.navbar-dark').removeClass('bg-dark');
-        $('.navbar-brand').removeClass('transparentbrand');
+        $('.navbar').addClass('transparent');
+        $('.navbar').removeClass('bg-dark2');
+        $('.navbar').removeClass('transparentbrand');
     }
 });
 

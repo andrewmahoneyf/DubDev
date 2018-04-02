@@ -70,7 +70,6 @@ html, body {
   background-color: #e5e5e5;
 }
 
-
 /*
  * Extra utilities
  */
@@ -95,16 +94,23 @@ html, body {
 
 .overflow-hidden { overflow: hidden; }
 
-header {
-  height: 80px;
+main {
+    background-color: #4b3181;
 }
+@font-face {font-family:"Harabara";src:url("../fonts/Harabara.eot?") format("eot"),url("../fonts/Harabara.woff") format("woff"),url("../fonts/Harabara.ttf") format("truetype"),url("../fonts/Harabara.svg#Harabara") format("svg");font-weight:normal;font-style:normal;}
 
+$hfont-stack: "Harabara", Georgia, "Times New Roman", serif;
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $hfont-stack;
+}
 /* ==========================================================================
 Navbar
 ========================================================================== */
-.bg-dark {
+nav.bg-dark2 {
     -webkit-transition: all 0.4s ease;
     transition: all 0.4s ease;
+    background-color: rgba(0, 0, 0, 0.85);
 }
 .navbar-brand {
     font-family: Rockwell;
@@ -134,9 +140,6 @@ span.navbar-toggler-icon {
 }
 nav {
   @media (min-width: 768px){
-    .vcenter {
-      padding-top:1em;
-    }
     form {
       max-width: 30%;
     }
@@ -151,19 +154,39 @@ nav {
     }
   }
 }
+/* ==========================================================================
+Header
+========================================================================== */
+
+.jumbotron {
+  border-top-left-radius: 0 !important;
+  border-top-right-radius: 0 !important;
+  padding-top:100px !important;
+}
 
 /* ==========================================================================
 Footer
 ========================================================================== */
 footer {
   .copyright {
-      margin-bottom: .5rem!important;
+      margin-bottom: .1rem!important;
       margin-top: 1rem!important;
-  }
-  .privacy {
-    margin-right: 1.5em;
   }
   .top {
     padding-left:5px;
   }
+  background-color: #4b3181;
+  a {
+    color:white;
+  }
+}
+.contact {
+    #message{
+        height: 200px;
+        padding-bottom: 170px;
+        margin: 1em 0;
+    }
+    .alert {
+        display:none;
+    }
 }

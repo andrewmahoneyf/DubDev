@@ -1,5 +1,8 @@
 import React from 'react';
-import '../../styles/Home.scss';
+import { Link } from 'react-router-dom';
+import * as routes from '../../constants/routes';
+import logo from '../../images/DubDevLogo.png';
+import background from "../../images/headerBackground.png";
 
 
 export default class Home extends React.Component {
@@ -10,16 +13,21 @@ export default class Home extends React.Component {
             height: '300px',
             borderradius: '21px 21px 0 0'
         };
+        const headerStyle = {
+            backgroundImage: "url(" + background + ")",
+            backgroundRepeat: "no-repeat",
+            backgroundSize: "cover",
+            height:"800px"
+        };
+
         return (
-            <section className="home">
-                <div className="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
-                    <div className="col-md-5 p-lg-5 mx-auto my-5">
-                        <h1 className="display-4 font-weight-normal">Punny headline</h1>
-                        <p className="lead font-weight-normal">And an even wittier subheading to boot. Jumpstart your marketing efforts with this example based on Apple's marketing pages.</p>
-                        <a className="btn btn-outline-secondary" href="/">Coming soon</a>
+            <section className="home bg-light">
+                <div className="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light" style={headerStyle}>
+                    <div className="col-md-8 p-lg-4 mx-auto my-5 headline">
+                        <img src={logo} alt="logo" className="w-100" />
+                        <p className="lead font-weight-normal">Making affordable websites for small businesses around Seattle</p>
+                        <Link className="btn btn-outline-secondary" to={routes.CONTACT}>Get a quote</Link>
                     </div>
-                    <div className="product-device box-shadow d-none d-md-block"></div>
-                    <div className="product-device product-device-2 box-shadow d-none d-md-block"></div>
                 </div>
 
                 <div className="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">

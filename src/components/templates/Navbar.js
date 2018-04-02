@@ -15,13 +15,13 @@ export default class Navigation extends React.Component {
         </button>
         <div className="collapse navbar-collapse pr-3" id="navbarSupportedContent">
           <ul className="navbar-nav mr-auto text-right">
-            <li className="nav-item pt-2">
+            <li className="nav-item pt-md-2">
               <Link className="py-2d-md-inline-block nav-link" to={routes.ABOUT}>About</Link>
             </li>
-            <li className="nav-item pt-2">
+            <li className="nav-item pt-md-2">
               <Link className="py-2d-md-inline-block nav-link" to={routes.TEAM}>Team</Link>
             </li>
-            <li className="nav-item pt-2">
+            <li className="nav-item pt-md-2">
               <Link className="py-2d-md-inline-block nav-link" to={routes.WEB_PROJECTS}>Portfolio</Link>
             </li>
             {/* //Drodown for when we have mobile apps to display
@@ -35,7 +35,7 @@ export default class Navigation extends React.Component {
               </div>
             </li> */}
           </ul>
-          <a className="py-2 d-none d-md-inline-block nav-link" href="#contact"><button className="btn btn-info my-sm-0" type="submit">Contact</button></a>
+          <a className="py-2 d-md-inline-block nav-link float-right pr-0" href="#contact"><button className="btn btn-info my-sm-0" type="submit">Contact</button></a>
         </div>
       </nav>
     );

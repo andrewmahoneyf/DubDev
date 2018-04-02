@@ -23,7 +23,7 @@ export default class Home extends React.Component {
         return (
             <section className="home bg-light">
                 <div className="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light" style={headerStyle}>
-                    <div className="col-md-8 p-lg-4 mx-auto my-5 headline">
+                    <div className="col-md-8 p-4 mx-auto my-5 headline">
                         <img src={logo} alt="logo" className="w-100" />
                         <p className="lead font-weight-normal">Making affordable websites for small businesses around Seattle</p>
                         <Link className="btn btn-outline-secondary" to={routes.CONTACT}>Get a quote</Link>

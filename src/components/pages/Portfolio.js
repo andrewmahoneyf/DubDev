@@ -12,9 +12,9 @@ class Web extends React.Component {
                     </div>
                 </div>
                 <div className="album py-5 bg-light">
-                    <div className="container">
+                    <div className="container-fluid">
                         <div className="row">
-                            <div className="col-md-4">
+                            <div className="col-md-6 col-lg-4">
                                 <div className="card mb-4 box-shadow">
                                     <img className="card-img-top" src={require('../../images/bigscontracting.png')} alt="Card cap" />
                                     <div className="card-body">
@@ -28,7 +28,7 @@ class Web extends React.Component {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-md-4">
+                            <div className="col-md-6 col-lg-4">
                                 <div className="card mb-4 box-shadow">
                                     <img className="card-img-top" src={require('../../images/coinglomerate.png')} alt="Card cap" />
                                     <div className="card-body">
@@ -42,7 +42,7 @@ class Web extends React.Component {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-md-4">
+                            <div className="col-md-6 col-lg-4">
                                 <div className="card mb-4 box-shadow">
                                     <img className="card-img-top" src={require('../../images/steppir.png')} alt="Card cap" />
                                     <div className="card-body">
@@ -57,7 +57,7 @@ class Web extends React.Component {
                                 </div>
                             </div>
                             {/*
-                            <div className="col-md-4">
+                            <div className="col-md-6 col-lg-4">
                                 <div className="card mb-4 box-shadow">
                                     <img className="card-img-top" src={''} alt="Card cap" />
                                     <div className="card-body">
@@ -71,7 +71,7 @@ class Web extends React.Component {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-md-4">
+                            <div className="col-md-6 col-lg-4">
                                 <div className="card mb-4 box-shadow">
                                     <img className="card-img-top" src={''} alt="Card cap" />
                                     <div className="card-body">

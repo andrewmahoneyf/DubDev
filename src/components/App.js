@@ -3,7 +3,7 @@ import { Route, Switch, Redirect } from 'react-router-dom';
 import Home from './pages/Home';
 import About from './pages/About';
 import Team from './pages/Team';
-import { Web } from './pages/Projects';
+import { Web } from './pages/Portfolio';
 import Navigation from './templates/Navbar';
 import Footer from './templates/Footer';
 import Privacy from './templates/PrivacyPolicy';

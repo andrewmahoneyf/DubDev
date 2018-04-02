@@ -83,7 +83,6 @@ Portfolio
     .card-img-top {
         height: 200px !important;
     }
-    padding-top:80px !important;
 
     .row {
         justify-content: center;
@@ -227,4 +226,9 @@ About
     }
 }
 
-
+/* ==========================================================================
+Privacy, Terms & 404
+========================================================================== */
+.privacyHeader, .termsHeader, .notFoundHeader {
+    padding-top:85px !important;
+}

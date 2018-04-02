@@ -91,7 +91,7 @@ export default class Contact extends Component {
         return (
             <section className="contact align-center">
                 <form id="contactForm" onSubmit={this.handleSubmit}>
-                    <div className="alert alert-success container w-50" id="alert" role="alert">
+                    <div className="alert alert-success container w-100" id="alert" role="alert">
                         <h2 className="alert-heading">Your message has been sent!</h2>
                     </div>
 

@@ -25,8 +25,8 @@ export default class Home extends React.Component {
                 <div className="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light" style={headerStyle}>
                     <div className="col-md-8 p-4 mx-auto my-5 headline">
                         <img src={logo} alt="logo" className="w-100" />
-                        <p className="lead font-weight-normal">Making affordable websites for small businesses around Seattle</p>
-                        <Link className="btn btn-outline-secondary" to={routes.CONTACT}>Get a quote</Link>
+                        <p className="lead font-weight-normal">Making websites affordable for small businesses in the Seattle &amp; Bellevue area</p>
+                        <a className="btn btn-outline-secondary" href="#contact">Get a quote</a>
                     </div>
                 </div>
 

@@ -104,6 +104,10 @@ $hfont-stack: "Harabara", Georgia, "Times New Roman", serif;
 h1, h2, h3, h4, h5, h6 {
   font-family: $hfont-stack;
 }
+
+.bg-dark {
+  background-color:rgba(0, 0, 0, 0.85) !important;
+}
 /* ==========================================================================
 Navbar
 ========================================================================== */
@@ -170,7 +174,6 @@ Footer
 footer {
   .copyright {
       margin-bottom: .1rem!important;
-      margin-top: 1rem!important;
   }
   .top {
     padding-left:5px;

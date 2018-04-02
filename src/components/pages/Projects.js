@@ -4,7 +4,13 @@ import React from 'react';
 class Web extends React.Component {
     render() {
         return (
-            <section className="portfolio">
+            <section className="portfolio bg-light">
+            <div className="jumbotron p-3 p-md-5 mb-0 text-white bg-dark">
+                <div className="col-md-6 px-0 container">
+                    <h1 className="display-4">Our Clients</h1>
+                    <p className="lead my-3">DubDev provides small businesses with an affordable option for web development and hosting. We specialize in and prefer React development but we can do it all.</p>
+                </div>
+            </div>
                 <div className="album py-5 bg-light">
                     <div className="container">
                         <div className="row">
@@ -50,6 +56,7 @@ class Web extends React.Component {
                                     </div>
                                 </div>
                             </div>
+                            {/*
                             <div className="col-md-4">
                                 <div className="card mb-4 box-shadow">
                                     <img className="card-img-top" src={''} alt="Card cap" />
@@ -77,7 +84,7 @@ class Web extends React.Component {
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 </div>

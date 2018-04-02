@@ -8,8 +8,7 @@ export default class About extends React.Component {
         <div className="jumbotron p-3 p-md-5 text-white bg-dark">
           <div className="col-md-6 px-0 container">
             <h1 className="display-4">Our Services</h1>
-            <p className="lead my-3">Multiple lines of text that form the lede, informing new readers quickly and efficiently about what's most interesting in this post's contents.</p>
-            <p className="lead mb-0"><a href="/" className="text-white font-weight-bold">Continue reading...</a></p>
+            <p className="lead my-3">DubDev provides small businesses with an affordable option for web development and hosting. We specialize in and prefer React development but we can do it all.</p>
           </div>
         </div>
         <div className="container">
@@ -96,26 +95,7 @@ export default class About extends React.Component {
                 <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
                 <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
               </div>
-
-              <div className="blog-post">
-                <h2 className="blog-post-title">New feature</h2>
-                <p className="blog-post-meta">December 14, 2013 by <a href="/">Chris</a></p>
-
-                <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-                <ul>
-                  <li>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</li>
-                  <li>Donec id elit non mi porta gravida at eget metus.</li>
-                  <li>Nulla vitae elit libero, a pharetra augue.</li>
-                </ul>
-                <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
-                <p>Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.</p>
-              </div>
-
-              <nav className="blog-pagination">
-                <a className="btn btn-outline-primary" href="/">Older</a>
-                <a className="btn btn-outline-secondary disabled" href="/">Newer</a>
-              </nav>
-
+            
             </div>
 
             <aside className="col-md-4 blog-sidebar">

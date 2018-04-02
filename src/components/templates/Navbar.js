@@ -35,11 +35,7 @@ export default class Navigation extends React.Component {
               </div>
             </li> */}
           </ul>
-          <a className="py-2 d-none d-md-inline-block nav-link" href="#contact">Contact</a>
-          <form className="form-inline my-2 my-lg-0 mr-4 input-group ml-2 ml-md-0">
-            <input className="form-control mr-sm-2 " type="search" placeholder="Search" aria-label="Search" />
-            <button className="btn btn-outline-info my-sm-0" type="submit">Search</button>
-          </form>
+          <a className="py-2 d-none d-md-inline-block nav-link" href="#contact"><button className="btn btn-info my-sm-0" type="submit">Contact</button></a>
         </div>
       </nav>
     );

@@ -7,7 +7,7 @@ export default class About extends React.Component {
       <section className="about bg-light">
         <div className="jumbotron p-3 p-md-5 text-white bg-dark">
           <div className="col-md-6 px-0 container">
-            <h1 className="display-4">Our Services</h1>
+            <h1 className="display-4 pt-md-4">Our Services</h1>
             <p className="lead my-3">DubDev provides small businesses with an affordable option for web development and hosting. We specialize in and prefer React development but we can do it all.</p>
           </div>
         </div>
@@ -95,7 +95,7 @@ export default class About extends React.Component {
                 <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
                 <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
               </div>
-            
+
             </div>
 
             <aside className="col-md-4 blog-sidebar">

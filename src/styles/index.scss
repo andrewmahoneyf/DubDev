@@ -166,6 +166,7 @@ Header
   border-top-left-radius: 0 !important;
   border-top-right-radius: 0 !important;
   padding-top:100px !important;
+  height: 375px;
 }
 
 /* ==========================================================================
@@ -181,6 +182,12 @@ footer {
   background-color: #4b3181;
   a {
     color:white;
+  }
+  .top {
+    color: #17a2b8;
+  }
+  small, small a {
+    color: #17a2b8;
   }
 }
 .contact {

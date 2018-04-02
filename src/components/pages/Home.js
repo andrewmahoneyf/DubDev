@@ -17,11 +17,11 @@ export default class Home extends React.Component {
             backgroundImage: "url(" + background + ")",
             backgroundRepeat: "no-repeat",
             backgroundSize: "cover",
-            height:"800px"
+            height: "102vh"
         };
 
         return (
-            <section className="home bg-light">
+            <section className="home bg-dark">
                 <div className="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light" style={headerStyle}>
                     <div className="col-md-8 p-4 mx-auto my-5 headline">
                         <img src={logo} alt="logo" className="w-100" />
@@ -30,7 +30,7 @@ export default class Home extends React.Component {
                     </div>
                 </div>
 
-                <div className="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
+                <div className="d-md-flex flex-md-equal w-100 py-md-5 pl-md-3">
                     <div className="bg-dark mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
                         <div className="my-3 py-3">
                             <h2 className="display-5">Another headline</h2>

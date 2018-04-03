@@ -4,8 +4,7 @@ const functions = require('firebase-functions');
 
 // The Firebase Admin SDK to access the Firebase Realtime Database.
 const admin = require('firebase-admin');
-admin.initializeApp(functions.config().firebase);
-
+admin.initializeApp();
 // SendGrid mail server external API
 const sgMail = require('@sendgrid/mail');
 // sgMail.setApiKey(process.env.SENDGRID_API_KEY); .env file isn't workign for
@@ -13,16 +12,13 @@ const sgMail = require('@sendgrid/mail');
 sgMail.setApiKey('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');
 
 // Listen for changes in all documents and all subcollections
-exports.modifyMessages = functions
-    .firestore
+exports.modifyMessages = functions.firestore
     .document('messages/{email}/emails/{list}')
-    .onWrite(event => {
+    .onWrite((change, context) => {
         // Get an object with the current document value. If the document does not
         // exist, it has been deleted.
-        const document = event.data.exists
-            ? event
-                .data
-                .data()
+        const document = change.after.exists
+            ? change.after.data()
             : null;
 
         // Send data to SendGrid mail server

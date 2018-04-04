@@ -61,10 +61,10 @@ export class Founders extends React.Component {
               </div>
               <div className="card-body bg-light text-dark">
                 <h5 className="font-weight-bold">
-                  <strong>James Sanghawk Lee</strong>
+                  <strong>James Lee</strong>
                 </h5>
                 <p className="grey-text">Co-Founder / Head of Back-End Development</p>
-                <p>James eats weiners! Dogs and pene! HA Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+                <p>James is a senior at the University of Washington and focuses on creating back-end solutions for clients. As a student, he received his certification for database management and has experience building a range of web applications from scratch.</p>
                 <ul className="list-unstyled">
                   <a className="icons-sm fb-ic" href="https://github.com/Sanghawk" target="_blank" rel="noopener noreferrer">
                     <i className="fa fa-github blue-text"> </i>

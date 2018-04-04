@@ -10,8 +10,8 @@ import bigs from "../../images/bigscontracting.png";
 import steppir from "../../images/newsletter.png";
 import work from "../../images/working.jpeg";
 import native from "../../images/react_native.jpeg";
-import web from "../../images/web.jpg";
-import { Founders } from "./Team";
+import web from "../../images/web.png";
+import { Founders } from "./About";
 
 export default class Home extends React.Component {
 
@@ -104,13 +104,13 @@ export default class Home extends React.Component {
 
 
                         <div className="content-section pb-3 pt-2" id="portfolio">
-                            <div className="container">
+                            <div className="container-fluid">
                                 <div className="content-section-heading text-center">
                                     <Link to={routes.WEB_PROJECTS}><h1 className="text-secondary mb-0">Portfolio</h1></Link>
                                     <h2 className="display-4">Recent Projects</h2>
                                 </div>
                                 <div className="row no-gutters">
-                                    <div className="col-lg-6">
+                                    <div className="col-md-6 col-lg-3 p-lg-1">
                                         <a className="portfolio-item" href="https://coinglomerate.co" target="_blank" rel="noopener noreferrer">
                                             <span className="caption">
                                                 <span className="caption-content mt-5">
@@ -121,7 +121,7 @@ export default class Home extends React.Component {
                                             <img className="img-fluid" src={coinglomerate} alt="" />
                                         </a>
                                     </div>
-                                    <div className="col-lg-6">
+                                    <div className="col-md-6 col-lg-3 p-lg-1">
                                         <a className="portfolio-item" href="https://bigscontracting.com" target="_blank" rel="noopener noreferrer">
                                             <span className="caption">
                                                 <span className="caption-content mt-5">
@@ -132,7 +132,7 @@ export default class Home extends React.Component {
                                             <img className="img-fluid" src={bigs} alt="" />
                                         </a>
                                     </div>
-                                    <div className="col-lg-6">
+                                    <div className="col-md-6 col-lg-3 p-lg-1">
                                         <a className="portfolio-item" href="https://steppir.com" target="_blank" rel="noopener noreferrer">
                                             <span className="caption">
                                                 <span className="caption-content mt-5">
@@ -143,7 +143,7 @@ export default class Home extends React.Component {
                                             <img className="img-fluid" src={steppir} alt="" />
                                         </a>
                                     </div>
-                                    <div className="col-lg-6">
+                                    <div className="col-md-6 col-lg-3 p-lg-1">
                                         <Link className="portfolio-item view-more" to={routes.WEB_PROJECTS}>
                                             <span className="caption">
                                                 <span className="caption-content mt-5">

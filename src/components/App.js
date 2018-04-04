@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { Route, Switch, Redirect } from 'react-router-dom';
 import Home from './pages/Home';
 import About from './pages/About';
-import Team from './pages/Team';
 import { Web } from './pages/Portfolio';
 import Navigation from './templates/Navbar';
 import Footer from './templates/Footer';
@@ -45,7 +44,6 @@ class Main extends React.Component {
         <Switch>
           <Route exact path={routes.LANDING} component={Home} />
           <Route path={routes.ABOUT} component={About} />
-          <Route path={routes.TEAM} component={Team} />
           <Route path={routes.WEB_PROJECTS} component={Web} />
           {/*<Route path={routes.MOBILE_PROJECTS} component={Mobile} />*/}
           <Route exact path={routes.PRIVACY} component={Privacy}/>

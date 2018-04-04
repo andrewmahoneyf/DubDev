@@ -1,3 +1,7 @@
+$breakpoint-sm: 768px;
+$breakpoint-md: 992px;
+$breakpoint-lg: 1200px;
+
 /* ==========================================================================
 Global
 ========================================================================== */
@@ -43,29 +47,24 @@ Home
         margin-top: 150px !important;
         background: antiquewhite;
     }
-    .body {
-        top: 100vh;
-        background: rgba(0, 0, 0, 0.85);
-        position: relative;
+    
+    @media(min-width: $breakpoint-sm){
+        #head {
+            position: fixed !important;
+            z-index: 0;
+            width: 100vw
+        }
+        .body {
+            top: 100vh;
+            background: rgba(0, 0, 0, 0.85);
+            position: relative;
+        }
+        .homeFooter footer {
+            position: relative;
+            z-index: 3;
+        }
     }
-    .mid-section {
-        background: rgba(0, 0, 0, 0.85);
-    }
-    #head {
-        position: fixed !important;
-        z-index: 0;
-        width: 100vw
-    }
-    .last {
-        margin-bottom: 100vh;
-    }
-    .homeFooter footer {
-        position: relative;
-        z-index: 3;
-    }
-    .bg-faded {
-        background-color: rgba(255, 255, 255, 0.85);
-    }
+    
 
     /* first section */
     .page-section {
@@ -85,7 +84,7 @@ Home
         font-size: 2.5rem;
         font-weight: 100;
     }
-    @media(min-width: 768px){
+    @media(min-width: $breakpoint-sm){
         .section-heading .section-heading-lower {
             font-size: 3rem;
         }
@@ -172,7 +171,7 @@ Home
         font-weight: 300;
         font-size: 1.2rem;
     }
-    @media (min-width: 992px) {
+    @media (min-width: $breakpoint-md) {
         .portfolio-item {
             max-width: none;
             margin: 0;
@@ -304,7 +303,7 @@ About
     }
 
     .h-250 { height: 250px; }
-    @media (min-width: 768px) {
+    @media (min-width: $breakpoint-sm) {
     .h-md-250 { height: 250px; }
     }
 
@@ -460,7 +459,7 @@ About
     margin-bottom: 0;
     }
 
-    @media (min-width: 768px) {
+    @media (min-width: $breakpoint-sm) {
     .timeline:before {
         left: 50%;
     }
@@ -492,7 +491,7 @@ About
     }
     }
 
-    @media (min-width: 992px) {
+    @media (min-width: $breakpoint-md) {
     .timeline > li {
         min-height: 150px;
     }
@@ -514,7 +513,7 @@ About
     }
     }
 
-    @media (min-width: 1200px) {
+    @media (min-width: $breakpoint-lg) {
     .timeline > li {
         min-height: 170px;
     }

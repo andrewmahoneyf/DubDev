@@ -1,3 +1,7 @@
+$breakpoint-sm: 768px;
+$breakpoint-md: 992px;
+$breakpoint-lg: 1200px;
+
 /* ==========================================================================
 Global
 ========================================================================== */
@@ -84,7 +88,7 @@ html, body {
   -webkit-box-flex: 1;
   flex: 1;
 }
-@media (min-width: 768px) {
+@media (min-width: $breakpoint-sm) {
   .flex-md-equal > * {
     -ms-flex: 1;
     -webkit-box-flex: 1;
@@ -114,6 +118,9 @@ h1, h2, h3, h4, h5, h6 {
 .bg-teal, .btn-info {
     background-color: rgba(29, 128, 159, 0.9) !important;
     border-color: rgba(29, 128, 159, 0.9) !important;
+}
+.bg-faded {
+    background-color: rgba(255, 255, 255, 0.85);
 }
 /* ==========================================================================
 Navbar
@@ -150,7 +157,7 @@ span.navbar-toggler-icon {
     clear: both;
 }
 nav {
-  @media (min-width: 768px){
+  @media (min-width: $breakpoint-sm){
     form {
       max-width: 30%;
     }
@@ -158,7 +165,7 @@ nav {
   .dropdown-toggle::after {
     display:none
   }
-  @media (max-width: 767px) {
+  @media (max-width: $breakpoint-sm - 1px) {
     .navbar-collapse {
       background-color: rgba(0, 0, 0, 0.85);
       margin-top: 23px;
@@ -196,7 +203,7 @@ footer {
   small, small a {
     color: #17a2b8;
   }
-  @media(min-width:786px) and (max-width: 1200px){
+  @media(min-width:$breakpoint-sm) and (max-width: $breakpoint-lg){
      #contact {
       height: 74vh;
     }

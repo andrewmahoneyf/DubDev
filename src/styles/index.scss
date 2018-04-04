@@ -105,8 +105,15 @@ h1, h2, h3, h4, h5, h6 {
   font-family: $hfont-stack;
 }
 
-.bg-dark {
+.bg-black {
   background-color:rgba(0, 0, 0, 0.85) !important;
+}
+.bg-purple {
+  background-color:#4b3181 !important;
+}
+.bg-teal, .btn-info {
+    background-color: rgba(29, 128, 159, 0.9) !important;
+    border-color: rgba(29, 128, 159, 0.9) !important;
 }
 /* ==========================================================================
 Navbar
@@ -154,14 +161,13 @@ nav {
   @media (max-width: 767px) {
     .navbar-collapse {
       background-color: rgba(0, 0, 0, 0.85);
-      margin-top: 25px;
+      margin-top: 23px;
     }
   }
 }
 /* ==========================================================================
 Header
 ========================================================================== */
-
 .jumbotron {
   border-top-left-radius: 0 !important;
   border-top-right-radius: 0 !important;
@@ -188,6 +194,11 @@ footer {
   }
   small, small a {
     color: #17a2b8;
+  }
+  @media(min-width:786px) and (max-width: 1200px){
+     #contact {
+      height: 74vh;
+    }
   }
 }
 .contact {

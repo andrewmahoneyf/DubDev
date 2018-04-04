@@ -35,13 +35,204 @@ Global
 Home
 ========================================================================== */
 .home {
+    /* General */
     .m-md-3 {
-    margin: 0!important;
+        margin: 0!important;
     }
     .headline {
         margin-top: 150px !important;
         background: antiquewhite;
     }
+    .body {
+        top: 100vh;
+        background: rgba(0, 0, 0, 0.85);
+        position: relative;
+    }
+    .mid-section {
+        background: rgba(0, 0, 0, 0.85);
+    }
+    #head {
+        position: fixed !important;
+        z-index: 0;
+        width: 100vw
+    }
+    .last {
+        margin-bottom: 100vh;
+    }
+    .homeFooter footer {
+        position: relative;
+        z-index: 3;
+    }
+    .bg-faded {
+        background-color: rgba(255, 255, 255, 0.85);
+    }
+
+    /* first section */
+    .page-section {
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+    }
+    .section-heading {
+        text-transform: uppercase;
+    }
+    .section-heading .section-heading-upper {
+        display: block;
+        font-size: 1rem;
+        font-weight: 800;
+    }
+    .section-heading .section-heading-lower {
+        display: block;
+        font-size: 2.5rem;
+        font-weight: 100;
+    }
+    @media(min-width: 768px){
+        .section-heading .section-heading-lower {
+            font-size: 3rem;
+        }
+    }
+    .intro {
+        position: relative;
+    }
+    .intro .intro-img {
+        width: 75%;
+        float: right;
+    }
+    .intro .intro-text {
+        left: 0;
+        width: 60%;
+        margin-top: 3rem;
+        position: absolute;
+    }
+    .intro .intro-text .intro-button {
+        width: 100%;
+        left: 0;
+        position: absolute;
+        bottom: -2rem;
+    }
+
+    /* teal section */
+    .cta {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+    .cta .cta-inner {
+        position: relative;
+        padding: 3rem;
+        margin: 0.5rem;
+        background-color: rgba(255, 255, 255, 0.85);
+    }
+    .cta .cta-inner:before {
+        border-radius: 0.5rem;
+        content: '';
+        position: absolute;
+        top: -0.5rem;
+        bottom: -0.5rem;
+        left: -0.5rem;
+        right: -0.5rem;
+        border: 0.25rem solid rgba(255, 255, 255, 0.85);
+    }
+
+    /* web/mobile section */
+    img.inherit {
+        height: inherit;
+    }
+
+    /* Portfolio Section */
+    .portfolio-item {
+        display: block;
+        position: relative;
+        overflow: hidden;
+        max-width: 530px;
+        margin: auto auto 1rem;
+    }
+    .portfolio-item .caption {
+        display: flex;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(33, 37, 41, 0.2);
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        z-index: 1;
+    }
+    .portfolio-item .caption .caption-content {
+        color: transparent;
+        margin: auto 2rem 2rem;
+    }
+    .view-more .caption{
+        background-color: rgba(29, 128, 159, 0.9) !important;
+         .caption-content {
+            color: #fff;
+        }
+    }
+    .portfolio-item .caption .caption-content h2 {
+        font-size: 1.5rem;
+    }
+    .portfolio-item .caption .caption-content p {
+        font-weight: 300;
+        font-size: 1.2rem;
+    }
+    @media (min-width: 992px) {
+        .portfolio-item {
+            max-width: none;
+            margin: 0;
+        }
+        .portfolio-item .caption {
+            -webkit-transition: -webkit-clip-path 0.25s ease-out, background-color 0.7s;
+            -webkit-clip-path: inset(0px);
+            clip-path: inset(0px);
+        }
+        .portfolio-item .caption .caption-content {
+            transition: opacity 0.25s;
+            margin-left: 5rem;
+            margin-right: 5rem;
+            margin-bottom: 5rem;
+        }
+        .portfolio-item img {
+            -webkit-transition: -webkit-clip-path 0.25s ease-out;
+            -webkit-clip-path: inset(-1px);
+            clip-path: inset(-1px);
+        }
+        .portfolio-item:hover img {
+            -webkit-clip-path: inset(2rem);
+            clip-path: inset(2rem);
+        }
+        .portfolio-item:hover .caption {
+            background-color: rgba(29, 128, 159, 0.9);
+            -webkit-clip-path: inset(2rem);
+            clip-path: inset(2rem);
+            .caption-content {
+                color: #fff;
+            }
+        }
+    }
+
+    /* Founders section */
+    .col-lg-4 {
+        margin-bottom: 1.5rem;
+        text-align: center;
+    }
+    h2 {
+        font-weight: 400;
+    }
+    .col-lg-4 p {
+        margin-right: .75rem;
+        margin-left: .75rem;
+    }
+    body {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        color: #5a5a5a;
+    }
+    .fa {
+        font-size:25px;
+        width: 45px;
+        margin: 3px;
+    }
+    img.rounded-circle.img-fluid {
+        max-height: 250px;
+    }
+
 }
 
 /* ==========================================================================
@@ -72,9 +263,6 @@ Team
     img.rounded-circle.img-fluid {
         max-height: 250px;
     }
-    .card {
-        background-color: #4b3181;
-    }
 }
 
 /* ==========================================================================
@@ -89,6 +277,9 @@ Portfolio
 
     .row {
         justify-content: center;
+    }
+    a {
+        color: #17a2b8;
     }
     a:hover {
         text-decoration: none;

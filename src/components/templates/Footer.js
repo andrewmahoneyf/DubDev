@@ -38,7 +38,7 @@ export default class Footer extends React.Component {
             <Contact />
           </div>
         </div>
-        <div className="row bg-dark pb-3">
+        <div className="row bg-black pb-3">
           <div className="col-12 col-md pt-3">
             <small className="d-block copyright">&copy; DubDev 2017-2018</small>
             <small className="d-block">

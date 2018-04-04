@@ -18,13 +18,20 @@ import '../jsx/smoothScroll.js';
 
 export default class App extends Component {
   render() {
+    const FooterGuy = () => {
+      if(window.location.pathname === '/'){
+        return "";
+      } else {
+        return <Footer />;
+      }
+    }
     return (
       <div className="App">
         <header id="navigation" role="navigation" >
           <Navigation />
         </header>
         <Main />
-        <Footer id="footer" role="contentinfo" />
+        <FooterGuy id="footer" role="contentinfo" />
       </div>
     );
   }

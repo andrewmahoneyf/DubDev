@@ -78,8 +78,6 @@ export default class Contact extends Component {
             email, message
         } = this.state;
 
-        console.log(this.state);
-
         // Validate the form
         const hasEmptyInput = first === '' || last === '' || !ValidateEmail(email);
         const isInvalid = message === '';

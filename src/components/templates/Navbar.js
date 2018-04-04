@@ -14,10 +14,10 @@ export default class Navigation extends React.Component {
           <i className="fa fa-bars" aria-label="toggle"></i>
         </button>
         <div className="collapse navbar-collapse pr-3" id="navbarSupportedContent">
-          <ul className="navbar-nav mr-auto text-right">
-            <li className="nav-item pt-md-1">
+          <ul className="navbar-nav mr-auto text-right pl-2">
+            {/* <li className="nav-item pt-md-1">
               <Link className="py-2d-md-inline-block nav-link" to={routes.ABOUT}>About</Link>
-            </li>
+            </li> */}
             <li className="nav-item pt-md-1">
               <Link className="py-2d-md-inline-block nav-link" to={routes.TEAM}>Team</Link>
             </li>

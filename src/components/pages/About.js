@@ -5,7 +5,7 @@ export default class About extends React.Component {
   render() {
     return (
       <section className="about bg-light">
-        <div className="jumbotron p-3 p-md-5 text-white bg-dark">
+        <div className="jumbotron p-3 p-md-5 text-white bg-black">
           <div className="col-md-6 px-0 container">
             <h1 className="display-4 pt-md-4">Our Services</h1>
             <p className="lead my-3">DubDev provides small businesses with an affordable option for web development and hosting. We specialize in and prefer React development but we can do it all.</p>

@@ -18,7 +18,7 @@ export default class About extends React.Component {
         </div>
 
         <Blog />
-        <Timeline />
+        {/*<Timeline />*/}
 
         <section className="team">
           <div className="p-3 p-md-5 bg-black mb-5">
@@ -40,34 +40,40 @@ class Blog extends React.Component {
     return (
       <section className="container-fluid">
         <div className="row">
-          <div className="col-md-7 blog-main">
+          <div className="col-md-7 blog-main mb-3">
 
-            <div className="pb-3 pb-md-5 mb-3 mb-md-5 bg-black services">
+            <div className="pb-3 pb-md-5 mb-3 bg-black services">
               <div className="col-md-6 px-0 container">
                 <h1 className="display-4 pt-3">Our Services</h1>
-                <p className="lead my-3 text-white">DubDev provides small businesses with an affordable option for web development and hosting. We specialize in and prefer React development but we can do it all.</p>
+                <p className="lead my-3 px-5 text-white">DubDev provides small businesses with an affordable option for web development and hosting. We specialize in and prefer React development but we can do it all.</p>
               </div>
             </div>
-            <h3 className="pb-3 mb-4 font-italic border-bottom">Customized Websites</h3>
 
-            <div className="blog-post">
-              <p>This blog post shows a few different types of content that's supported and styled with Bootstrap. Basic typography, images, and code are all supported.</p>
+            <div className="blog-post border-top pt-3">
+              <h2>Boosting local businesses.</h2>
               <hr />
-              <p>Cum sociis natoque penatibus et magnis <a href="/">dis parturient montes</a>, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
-              <blockquote>
-                <p>Curabitur blandit tempus porttitor. <strong>Nullam quis risus eget urna mollis</strong> ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              </blockquote>
-              <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
+              <p>
+                DubDev is a full-service web, tablet, and mobile application development company founded by two
+                University of Washington students in 2018 after recieving several requests for development work.
+                <strong> Dub</strong> is synomonous for "www" and <strong>Dev</strong> is short for development.
+              </p>
+              <p>
+                Our devlopers are located in Seattle, WA and prefer to work hands-on with clients. In order to get 
+                things going, we need to meet and carefully plan out your design and ideas. Our development work 
+                will be done remotely, but we provide constant updates as well as access to a public URL so you can 
+                provide feedback along the way. If your company is out of the state, contact us for further details. 
+              </p>
             </div>
 
-            <div className="blog-post">
-              <h2 className="blog-post-title">Our Skills</h2>
-              <p>Cum sociis natoque penatibus et magnis <a href="/">dis parturient montes</a>, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
-              <blockquote>
-                <p>Curabitur blandit tempus porttitor. <strong>Nullam quis risus eget urna mollis</strong> ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              </blockquote>
-              <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
-              <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+            <div className="blog-post border-top pt-3">
+              <h2>Your website made your way.</h2>
+              <hr />
+              <p>
+                Our developers specialize in and prefer React development, but we can do it all. We are open to
+                any project or specification you may have. React, WordPress, Drupal, and Angular are our current 
+                qualifications, but note that these are not limitations. As our promise, we are open to testing 
+                any CMS or JavaScript library you desire.
+              </p>
             </div>
           </div>
           <aside className="col-md-5 blog-sidebar">

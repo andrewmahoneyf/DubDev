@@ -318,6 +318,12 @@ About
 
 
     /* Blog */
+    @media(max-width:$breakpoint-sm){
+        .services{
+            margin-left:-30px;
+            margin-right:-30px;
+        }
+    }
     .blog-title {
         margin-bottom: 0;
         font-size: 2rem;

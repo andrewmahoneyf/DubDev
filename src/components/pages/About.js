@@ -11,16 +11,9 @@ export default class About extends React.Component {
   render() {
     return (
       <section className="about bg-light">
-        <div className="jumbotron p-3 p-md-5 mb-0 bg-black">
+        <div className="jumbotron p-3 p-md-5 mb-0 mb-md-5 bg-black">
           <div className="col-md-8 col-lg-6 p-4 p-lg-0 mx-auto mt-5 mt-lg-0 headline">
             <img src={logo} alt="logo" className="w-75" />
-          </div>
-        </div>
-
-        <div className="pb-3 pb-md-5 mb-3 mb-md-5 bg-black">
-          <div className="col-md-6 px-0 container">
-            <h1 className="display-4">Our Services</h1>
-            <p className="lead my-3 text-white">DubDev provides small businesses with an affordable option for web development and hosting. We specialize in and prefer React development but we can do it all.</p>
           </div>
         </div>
 
@@ -47,15 +40,17 @@ class Blog extends React.Component {
     return (
       <section className="container-fluid">
         <div className="row">
-          <aside className="col-md-5 blog-sidebar">
-            <Cards />
-          </aside>
-
           <div className="col-md-7 blog-main">
+
+            <div className="pb-3 pb-md-5 mb-3 mb-md-5 bg-black services">
+              <div className="col-md-6 px-0 container">
+                <h1 className="display-4 pt-3">Our Services</h1>
+                <p className="lead my-3 text-white">DubDev provides small businesses with an affordable option for web development and hosting. We specialize in and prefer React development but we can do it all.</p>
+              </div>
+            </div>
             <h3 className="pb-3 mb-4 font-italic border-bottom">Customized Websites</h3>
 
             <div className="blog-post">
-              <h2 className="blog-post-title">Our Foundation</h2>
               <p>This blog post shows a few different types of content that's supported and styled with Bootstrap. Basic typography, images, and code are all supported.</p>
               <hr />
               <p>Cum sociis natoque penatibus et magnis <a href="/">dis parturient montes</a>, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
@@ -75,6 +70,9 @@ class Blog extends React.Component {
               <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
             </div>
           </div>
+          <aside className="col-md-5 blog-sidebar">
+            <Cards />
+          </aside>
         </div>
       </section>
     );
@@ -174,20 +172,6 @@ class Timeline extends React.Component {
                     <div class="timeline-heading">
                       <h4>December 2012</h4>
                       <h4 class="subheading">Transition to Full Service</h4>
-                    </div>
-                    <div class="timeline-body">
-                      <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                    </div>
-                  </div>
-                </li>
-                <li class="timeline-inverted">
-                  <div class="timeline-image">
-                    <img class="rounded-circle img-fluid" src="img/about/4.jpg" alt="" />
-                  </div>
-                  <div class="timeline-panel">
-                    <div class="timeline-heading">
-                      <h4>July 2014</h4>
-                      <h4 class="subheading">Phase Two Expansion</h4>
                     </div>
                     <div class="timeline-body">
                       <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>

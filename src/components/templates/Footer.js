@@ -24,12 +24,11 @@ export default class Footer extends React.Component {
             <h1 className="display-4 pt-2 pt-md-5 mt-md-4">Contact Us</h1>
             <p>In need of a new website? Tell us about your project and we will send you a timeline along with our best quote.</p>
             <div className="row pt-2">
-              <div className="col-6 text-right">
-                <a href="https://twitter.com/?lang=en"><i className="fa fa-linkedin" aria-label="linkedIn logo"></i></a>
-                <a href="mailto:info@dubdev.com"><i className="fa fa-envelope" aria-label="email"></i></a>
-                <a href="tel:425-210-5809"><i className="fa fa-phone" aria-label="call" ></i></a>
+              <div className="col-6 col-md-4 col-lg-6 text-right">
+                <a href="https://www.linkedin.com/company/dubdev/"><i className="fa fa-linkedin " aria-label="linkedIn logo"></i></a>
+                <a href="mailto:andrew.mahoney.f@gmail.com"><i className="fa fa-envelope d-md-none d-lg-inline-block" aria-label="email"></i></a>
               </div>
-              <div className="col-6 text-left">
+              <div className="col-6 col-md-8 col-lg-6 text-left">
                 <p>4504 16th Ave NE<br />Seattle, WA 98105</p>
               </div>
             </div>

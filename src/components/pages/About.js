@@ -2,6 +2,10 @@ import React from 'react';
 import andrew from '../../images/andrew.png';
 import james from '../../images/james.png';
 import logo from '../../images/DubDevLogo.png';
+import react from '../../images/react.png';
+import wordpress from '../../images/wordpress.jpg';
+import drupal from '../../images/drupal.png';
+import angular from '../../images/angular.jpg';
 
 export default class About extends React.Component {
   render() {
@@ -19,12 +23,9 @@ export default class About extends React.Component {
             <p className="lead my-3 text-white">DubDev provides small businesses with an affordable option for web development and hosting. We specialize in and prefer React development but we can do it all.</p>
           </div>
         </div>
-        
-        {/*
-        <Cards />
+
         <Blog />
         <Timeline />
-        */}
 
         <section className="team">
           <div className="p-3 p-md-5 bg-black mb-5">
@@ -41,120 +42,20 @@ export default class About extends React.Component {
 }
 
 
-class Cards extends React.Component {
-  render() {
-    return (
-      <section className="container-fluid">
-        <div className="row mb-2">
-          <div className="col-md-6 col-lg-3">
-            <div className="card flex-md-row mb-4 box-shadow h-md-250">
-              <div className="card-body d-flex flex-column align-items-start">
-                <strong className="d-inline-block mb-2 text-primary">World</strong>
-                <h3 className="mb-0">
-                  <a className="text-dark" href="/">Featured post</a>
-                </h3>
-                <div className="mb-1 text-muted">Nov 12</div>
-                <p className="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-                <a href="/">Continue reading</a>
-              </div>
-              <img className="card-img-right flex-auto d-none d-md-block" data-src="holder.js/200x250?theme=thumb" alt="Card cap" />
-            </div>
-          </div>
-          <div className="col-md-6 col-lg-3">
-            <div className="card flex-md-row mb-4 box-shadow h-md-250">
-              <div className="card-body d-flex flex-column align-items-start">
-                <strong className="d-inline-block mb-2 text-success">Design</strong>
-                <h3 className="mb-0">
-                  <a className="text-dark" href="/">Post title</a>
-                </h3>
-                <div className="mb-1 text-muted">Nov 11</div>
-                <p className="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-                <a href="/">Continue reading</a>
-              </div>
-              <img className="card-img-right flex-auto d-none d-md-block" data-src="holder.js/200x250?theme=thumb" alt="Card cap" />
-            </div>
-          </div>
-          <div className="col-md-6 col-lg-3">
-            <div className="card flex-md-row mb-4 box-shadow h-md-250">
-              <div className="card-body d-flex flex-column align-items-start">
-                <strong className="d-inline-block mb-2 text-primary">World</strong>
-                <h3 className="mb-0">
-                  <a className="text-dark" href="/">Featured post</a>
-                </h3>
-                <div className="mb-1 text-muted">Nov 12</div>
-                <p className="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-                <a href="/">Continue reading</a>
-              </div>
-              <img className="card-img-right flex-auto d-none d-md-block" data-src="holder.js/200x250?theme=thumb" alt="Card cap" />
-            </div>
-          </div>
-          <div className="col-md-6 col-lg-3">
-            <div className="card flex-md-row mb-4 box-shadow h-md-250">
-              <div className="card-body d-flex flex-column align-items-start">
-                <strong className="d-inline-block mb-2 text-success">Design</strong>
-                <h3 className="mb-0">
-                  <a className="text-dark" href="/">Post title</a>
-                </h3>
-                <div className="mb-1 text-muted">Nov 11</div>
-                <p className="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-                <a href="/">Continue reading</a>
-              </div>
-              <img className="card-img-right flex-auto d-none d-md-block" data-src="holder.js/200x250?theme=thumb" alt="Card cap" />
-            </div>
-          </div>
-        </div>
-      </section>
-    );
-  }
-}
-
-
 class Blog extends React.Component {
   render() {
     return (
       <section className="container-fluid">
         <div className="row">
-          <aside className="col-md-4 blog-sidebar">
-            <div className="p-3 mb-3 bg-light rounded">
-              <h4 className="font-italic">About</h4>
-              <p className="mb-0">Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
-            </div>
-
-            <div className="p-3">
-              <h4 className="font-italic">Archives</h4>
-              <ol className="list-unstyled mb-0">
-                <li><a href="/">March 2014</a></li>
-                <li><a href="/">February 2014</a></li>
-                <li><a href="/">January 2014</a></li>
-                <li><a href="/">December 2013</a></li>
-                <li><a href="/">November 2013</a></li>
-                <li><a href="/">October 2013</a></li>
-                <li><a href="/">September 2013</a></li>
-                <li><a href="/">August 2013</a></li>
-                <li><a href="/">July 2013</a></li>
-                <li><a href="/">June 2013</a></li>
-                <li><a href="/">May 2013</a></li>
-                <li><a href="/">April 2013</a></li>
-              </ol>
-            </div>
-
-            <div className="p-3">
-              <h4 className="font-italic">Elsewhere</h4>
-              <ol className="list-unstyled">
-                <li><a href="/">GitHub</a></li>
-                <li><a href="/">Twitter</a></li>
-                <li><a href="/">Facebook</a></li>
-              </ol>
-            </div>
+          <aside className="col-md-5 blog-sidebar">
+            <Cards />
           </aside>
 
-
-          <div className="col-md-8 blog-main">
-            <h3 className="pb-3 mb-4 font-italic border-bottom">
-              From the Firehose</h3>
+          <div className="col-md-7 blog-main">
+            <h3 className="pb-3 mb-4 font-italic border-bottom">Customized Websites</h3>
 
             <div className="blog-post">
-              <h2 className="blog-post-title">Sample blog post</h2>
+              <h2 className="blog-post-title">Our Foundation</h2>
               <p>This blog post shows a few different types of content that's supported and styled with Bootstrap. Basic typography, images, and code are all supported.</p>
               <hr />
               <p>Cum sociis natoque penatibus et magnis <a href="/">dis parturient montes</a>, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
@@ -165,7 +66,7 @@ class Blog extends React.Component {
             </div>
 
             <div className="blog-post">
-              <h2 className="blog-post-title">Another blog post</h2>
+              <h2 className="blog-post-title">Our Skills</h2>
               <p>Cum sociis natoque penatibus et magnis <a href="/">dis parturient montes</a>, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
               <blockquote>
                 <p>Curabitur blandit tempus porttitor. <strong>Nullam quis risus eget urna mollis</strong> ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
@@ -173,9 +74,51 @@ class Blog extends React.Component {
               <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
               <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
             </div>
-          </div> 
+          </div>
         </div>
       </section>
+    );
+  }
+}
+
+
+class Cards extends React.Component {
+  render() {
+    return (
+      <div className="mb-2 cards">
+        <div className="card flex-row mb-4 box-shadow h-md-250">
+          <div className="card-body d-flex flex-column align-items-start">
+            <h3 className="mb-0 text-success">ReactJS</h3>
+            <p className="card-text mb-auto">A JavaScript library for building user interfaces and powerful apps maintained by Facebook.</p>
+            <a href="https://reactjs.org/" target="_blank" rel="noopener noreferrer">Learn more</a>
+          </div>
+          <img className="card-img-right flex-auto d-md-none d-lg-block" src={react} alt="Card cap" />
+        </div>
+        <div className="card flex-row mb-4 box-shadow h-md-250">
+          <div className="card-body d-flex flex-column align-items-start">
+            <h3 className="mb-0 text-success">WordPress</h3>
+            <p className="card-text mb-auto">WordPress.com powers beautiful websites for businesses, professionals, and bloggers.</p>
+            <a href="https://wordpress.com/" target="_blank" rel="noopener noreferrer">Learn more</a>
+          </div>
+          <img className="card-img-right flex-auto d-md-none d-lg-block" src={wordpress} alt="Card cap" />
+        </div>
+        <div className="card flex-row mb-4 box-shadow h-md-250">
+          <div className="card-body d-flex flex-column align-items-start">
+            <h3 className="mb-0 text-success">Drupal 8</h3>
+            <p className="card-text mb-auto">Drupal is free, open source software, produced by over a million users in 230 countries.</p>
+            <a href="http://www.drupal.com/" target="_blank" rel="noopener noreferrer">Learn more</a>
+          </div>
+          <img className="card-img-right flex-auto d-md-none d-lg-block" src={drupal} alt="Card cap" />
+        </div>
+        <div className="card flex-row mb-4 box-shadow h-md-250">
+          <div className="card-body d-flex flex-column align-items-start">
+            <h3 className="mb-0 text-success">AngularJS</h3>
+            <p className="card-text mb-auto">AngularJS is a JavaScript-based front-end web application framework maintained by Google.</p>
+            <a href="https://angularjs.org/" target="_blank" rel="noopener noreferrer">Learn more</a>
+          </div>
+          <img className="card-img-right flex-auto d-md-none d-lg-block" src={angular} alt="Card cap" />
+        </div>
+      </div>
     );
   }
 }
@@ -188,7 +131,7 @@ class Timeline extends React.Component {
         <div class="container">
           <div class="row">
             <div class="col-lg-12 text-center">
-              <h2 class="section-heading text-uppercase">About</h2>
+              <h2 class="section-heading text-uppercase">Development Process</h2>
               <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
             </div>
           </div>

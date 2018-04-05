@@ -153,10 +153,10 @@ class Portfolio extends React.Component {
                         <h2 className="display-4">Recent Projects</h2>
                     </div>
                     <div className="row no-gutters">
-                        <div className="col-md-6 col-lg-3 p-lg-1">
+                        <div className="col-md-6 p-md-1 p-xl-3">
                             <a className="portfolio-item" href="https://coinglomerate.co" target="_blank" rel="noopener noreferrer">
                                 <span className="caption">
-                                    <span className="caption-content mt-5">
+                                    <span className="caption-content align-middle m-auto">
                                         <h2>Coinglomerate</h2>
                                         <p className="mb-0">A classic single-page web app built for an upcoming blockchain company.</p>
                                     </span>
@@ -164,32 +164,32 @@ class Portfolio extends React.Component {
                                 <img className="img-fluid" src={coinglomerate} alt="" />
                             </a>
                         </div>
-                        <div className="col-md-6 col-lg-3 p-lg-1">
+                        <div className="col-md-6 p-md-1 p-xl-3">
                             <a className="portfolio-item" href="https://bigscontracting.com" target="_blank" rel="noopener noreferrer">
                                 <span className="caption">
-                                    <span className="caption-content mt-5">
+                                    <span className="caption-content align-middle m-auto">
                                         <h2>Big's Contrating Agency</h2>
-                                        <p className="mb-0">A powerful React app integrated with Firebase for authentication, cloud storage, and firestore database.</p>
+                                        <p className="mb-0">A powerful React app integrated with Firebase<span className="d-none d-lg-inline"> for authentication, cloud storage, and firestore database</span>.</p>
                                     </span>
                                 </span>
                                 <img className="img-fluid" src={bigs} alt="" />
                             </a>
                         </div>
-                        <div className="col-md-6 col-lg-3 p-lg-1">
-                            <a className="portfolio-item" href="https://steppir.com" target="_blank" rel="noopener noreferrer">
+                        <div className="col-md-6 p-md-1 p-xl-3">
+                            <a className="portfolio-item" href="https://andrewmahoneyf.github.io/SteppIR-Newsletter/" target="_blank" rel="noopener noreferrer">
                                 <span className="caption">
-                                    <span className="caption-content mt-5">
-                                        <h2>SteppIR</h2>
-                                        <p className="mb-0">An email newsletter we created for SteppIR along with monitoring their beautiful WordPress site.</p>
+                                    <span className="caption-content align-middle m-auto">
+                                        <h2>SteppIR Communication Systems</h2>
+                                        <p className="mb-0">An email newsletter we created for SteppIR<span className="d-none d-lg-inline"> along with monitoring their beautiful WordPress site</span>.</p>
                                     </span>
                                 </span>
                                 <img className="img-fluid" src={steppir} alt="" />
                             </a>
                         </div>
-                        <div className="col-md-6 col-lg-3 p-lg-1">
+                        <div className="col-md-6 p-md-1 p-xl-3">
                             <Link className="portfolio-item view-more" to={routes.WEB_PROJECTS}>
                                 <span className="caption">
-                                    <span className="caption-content mt-5">
+                                    <span className="caption-content align-middle m-auto">
                                         <h2>View More</h2>
                                         <p className="mb-0">Check out our constantly growing client list on our portfolio!</p>
                                     </span>

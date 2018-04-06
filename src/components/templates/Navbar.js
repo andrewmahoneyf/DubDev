@@ -9,7 +9,7 @@ export default class Navigation extends React.Component {
   render() {
     return (
       <nav className="navbar navbar-expand-md fixed-top site-header py-1 transparent" data-toggle="collapse" data-target="#navbarSupportedContent">
-        <Link className="py-2 pl-3" to={routes.LANDING}><img className="logo" src={logo} alt="logo" width="100" height="40"/></Link>
+        <Link className="py-2 pl-3" to={routes.LANDING}><img className="logo" src={logo} alt="logo" width="98.2" height="24.7"/></Link>
         <button className="navbar-toggler mr-1" type="button" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <i className="fa fa-bars" aria-label="toggle"></i>
         </button>

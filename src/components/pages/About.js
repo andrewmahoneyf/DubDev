@@ -19,7 +19,7 @@ export default class About extends React.Component {
         </div>
 
         <Blog />
-        <Timeline />
+        {/*<Timeline />*/}
 
         <section className="team container-fluid">
           <div className="p-3 p-md-5 bg-black mb-5 box-shadow rounded">

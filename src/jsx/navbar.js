@@ -6,10 +6,12 @@ $(window).scroll(function () {
         $('.navbar').removeClass('transparent');
         $('.navbar').addClass('bg-dark2');
         $('.navbar').addClass('transparentbrand');
+        $('.banner').attr("href", "#top");
     } else {
         $('.navbar').addClass('transparent');
         $('.navbar').removeClass('bg-dark2');
         $('.navbar').removeClass('transparentbrand');
+        $('.banner').removeAttr("href");
     }
 });
 

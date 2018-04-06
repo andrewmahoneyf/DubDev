@@ -26,11 +26,11 @@ export default class Home extends React.Component {
 
         return (
             <div className="home bg-dark">
-                <section className="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light" style={headerStyle} id="head">
+                <section className="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center" style={headerStyle} id="head">
                     <div className="col-md-8 p-4 mx-auto my-5 headline box-shadow rounded animated fadeIn">
                         <img src={logo} alt="logo" className="w-100" />
                         <p className="lead font-weight-normal">Making websites affordable for small businesses in the Seattle &amp; Bellevue area</p>
-                        <a className="btn btn-outline-secondary btn-block btn-lg box-shadow zoom" href="#contact">
+                        <a className="btn btn-outline-secondary btn-block btn-lg box-shadow" href="#contact">
                             Get a quote
                         </a>
                     </div>

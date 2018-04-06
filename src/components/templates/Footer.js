@@ -21,8 +21,8 @@ export default class Footer extends React.Component {
             <p>In need of a new website? Tell us about your project and we will send you a timeline along with our best quote.</p>
             <div className="row pt-2">
               <div className="col-6 col-md-4 col-lg-6 text-right">
-                <a href="https://www.linkedin.com/company/dubdev/"><i className="fa fa-linkedin " aria-label="linkedIn logo"></i></a>
-                <a href="mailto:andrew.mahoney.f@gmail.com"><i className="fa fa-envelope d-md-none d-lg-inline-block" aria-label="email"></i></a>
+                <a href="https://www.linkedin.com/company/dubdev/"><i className="fa fa-linkedin box-shadow" aria-label="linkedIn logo"></i></a>
+                <a href="mailto:andrew.mahoney.f@gmail.com"><i className="fa fa-envelope d-md-none d-lg-inline-block box-shadow" aria-label="email"></i></a>
               </div>
               <div className="col-6 col-md-8 col-lg-6 text-left">
                 <p>4504 16th Ave NE<br />Seattle, WA 98105</p>

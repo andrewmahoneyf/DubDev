@@ -1,6 +1,6 @@
 import React from 'react';
 import andrew from '../../images/andrew.png';
-import james from '../../images/james.png';
+import james from '../../images/james.jpg';
 
 
 export default class Founders extends React.Component {

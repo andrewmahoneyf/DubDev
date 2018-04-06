@@ -11,7 +11,8 @@ import steppir from "../../images/newsletter.png";
 import work from "../../images/working.jpeg";
 import native from "../../images/react_native.jpeg";
 import web from "../../images/web.png";
-import { Founders } from "./About";
+import Founders from "../templates/Founders";
+
 
 export default class Home extends React.Component {
     render() {
@@ -26,10 +27,12 @@ export default class Home extends React.Component {
         return (
             <div className="home bg-dark">
                 <section className="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light" style={headerStyle} id="head">
-                    <div className="col-md-8 p-4 mx-auto my-5 headline">
+                    <div className="col-md-8 p-4 mx-auto my-5 headline box-shadow rounded animated fadeIn">
                         <img src={logo} alt="logo" className="w-100" />
                         <p className="lead font-weight-normal">Making websites affordable for small businesses in the Seattle &amp; Bellevue area</p>
-                        <a className="btn btn-outline-secondary" href="#contact">Get a quote</a>
+                        <a className="btn btn-outline-secondary btn-block btn-lg box-shadow zoom" href="#contact">
+                            Get a quote
+                        </a>
                     </div>
                 </section>
                 <div className="body">
@@ -43,7 +46,7 @@ export default class Home extends React.Component {
                         <Portfolio />
 
                         <div className="founders">
-                            <h1 className="display-4 pt-md-5">Meet Our Developers</h1>
+                            <h1 className="display-4 pt-md-5 pb-2">Meet Our Developers</h1>
                             <Founders />
                         </div>
                     </section>
@@ -66,14 +69,14 @@ class Intro extends React.Component {
                 <div className="container">
                     <div className="intro pt-3 pt-md-5">
                         <img className="intro-img img-fluid mb-3 mb-lg-0 rounded" src={code} alt="code" />
-                        <div className="intro-text left-0 text-center bg-faded p-2 p-md-4 rounded">
+                        <div className="intro-text left-0 text-center bg-faded p-2 p-md-4 rounded box-shadow">
                             <h2 className="section-heading mb-2 mb-md-4">
                                 <span className="section-heading-upper">Budget friendly</span>
                                 <span className="section-heading-lower">Custom Websites</span>
                             </h2>
                             <p className="mb-3 d-none d-sm-block">Whether you need a completely new site built for you, or just some updates to your current one, we can do it all! We specialize in React development but have all of the bases covered.</p>
                             <div className="intro-button mx-auto">
-                                <Link className="btn btn-info" to={routes.ABOUT}>About our company</Link>
+                                <Link className="btn btn-info box-shadow zoom" to={routes.ABOUT}>About our company</Link>
                             </div>
                         </div>
                     </div>
@@ -86,11 +89,11 @@ class Intro extends React.Component {
 class Promise extends React.Component {
     render() {
         return (
-            <div className="page-section cta ml-md-3 mr-md-3 bg-teal">
+            <div className="page-section cta ml-md-3 mr-md-3 bg-teal rounded box-shadow">
                 <div className="container">
                     <div className="row">
                         <div className="col-xl-9 mx-auto">
-                            <div className="cta-inner text-center rounded">
+                            <div className="cta-inner text-center rounded box-shadow">
                                 <h2 className="section-heading mb-4">
                                     <span className="section-heading-upper">Your Application</span>
                                     <span className="section-heading-lower">Your Way</span>
@@ -117,22 +120,22 @@ class Applications extends React.Component {
         };
         return (
             <div className="d-md-flex flex-md-equal w-100 pb-3 pb-md-5 pl-md-3">
-                <div className="bg-dark mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
+                <div className="bg-dark mr-md-3 pt-3 px-3 pt-md-5 px-md-5 pb-5 text-center text-white overflow-hidden rounded box-shadow">
                     <div className="my-3 py-3">
                         <h2 className="display-5">Web Applications</h2>
                         <p className="lead">You name the website and design, we can build it.</p>
                     </div>
                     <a className="bg-faded box-shadow mx-auto" style={pStyle}>
-                        <img className="intro-img img-fluid mb-3 mb-lg-0 rounded inherit" src={web} alt="web" />
+                        <img className="intro-img img-fluid mb-3 mb-lg-0 rounded inherit animated infinite pulse" src={web} alt="web" />
                     </a>
                 </div>
-                <div className="bg-faded mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+                <div className="bg-faded mr-md-3 pt-3 px-3 pt-md-5 px-md-5 pb-5 text-center overflow-hidden rounded box-shadow">
                     <div className="my-3 p-3">
                         <h2 className="display-5">Mobile Applications</h2>
                         <p className="lead">Powerful React Native apps for iOS &amp; Android.</p>
                     </div>
                     <a className="bg-dark box-shadow mx-auto" style={pStyle} href="https://facebook.github.io/react-native/" target="_blank" rel="noopener noreferrer">
-                        <img className="intro-img img-fluid mb-3 mb-lg-0 rounded inherit" src={native} alt="mobile" />
+                        <img className="intro-img img-fluid mb-3 mb-lg-0 rounded inherit box-shadow animated infinite pulse" src={native} alt="mobile" />
                     </a>
                 </div>
             </div>
@@ -154,7 +157,7 @@ class Portfolio extends React.Component {
                     </div>
                     <div className="row no-gutters">
                         <div className="col-md-6 p-md-1 p-xl-3">
-                            <a className="portfolio-item" href="https://coinglomerate.co" target="_blank" rel="noopener noreferrer">
+                            <a className="portfolio-item rounded" href="https://coinglomerate.co" target="_blank" rel="noopener noreferrer">
                                 <span className="caption">
                                     <span className="caption-content align-middle m-auto">
                                         <h2>Coinglomerate</h2>
@@ -165,7 +168,7 @@ class Portfolio extends React.Component {
                             </a>
                         </div>
                         <div className="col-md-6 p-md-1 p-xl-3">
-                            <a className="portfolio-item" href="https://bigscontracting.com" target="_blank" rel="noopener noreferrer">
+                            <a className="portfolio-item rounded" href="https://bigscontracting.com" target="_blank" rel="noopener noreferrer">
                                 <span className="caption">
                                     <span className="caption-content align-middle m-auto">
                                         <h2>Big's Contrating Agency</h2>
@@ -176,7 +179,7 @@ class Portfolio extends React.Component {
                             </a>
                         </div>
                         <div className="col-md-6 p-md-1 p-xl-3">
-                            <a className="portfolio-item" href="https://andrewmahoneyf.github.io/SteppIR-Newsletter/" target="_blank" rel="noopener noreferrer">
+                            <a className="portfolio-item rounded" href="https://andrewmahoneyf.github.io/SteppIR-Newsletter/" target="_blank" rel="noopener noreferrer">
                                 <span className="caption">
                                     <span className="caption-content align-middle m-auto">
                                         <h2>SteppIR Communication Systems</h2>
@@ -187,7 +190,7 @@ class Portfolio extends React.Component {
                             </a>
                         </div>
                         <div className="col-md-6 p-md-1 p-xl-3">
-                            <Link className="portfolio-item view-more" to={routes.WEB_PROJECTS}>
+                            <Link className="portfolio-item view-more rounded" to={routes.WEB_PROJECTS}>
                                 <span className="caption">
                                     <span className="caption-content align-middle m-auto">
                                         <h2>View More</h2>

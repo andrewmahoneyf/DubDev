@@ -8,7 +8,7 @@ import logo from '../../images/DubDevIconWhite.png';
 export default class Navigation extends React.Component {
   render() {
     return (
-      <nav className="navbar navbar-expand-md fixed-top site-header py-1 transparent" data-toggle="collapse" data-target="#navbarSupportedContent">
+      <nav className="navbar navbar-expand-md fixed-top site-header py-1 transparent box-shadow" data-toggle="collapse" data-target="#navbarSupportedContent">
         <Link className="py-2 pl-3" to={routes.LANDING}><img className="logo" src={logo} alt="logo" width="100" height="40"/></Link>
         <button className="navbar-toggler mr-1" type="button" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <i className="fa fa-bars" aria-label="toggle"></i>
@@ -35,7 +35,9 @@ export default class Navigation extends React.Component {
               </div>
             </li> */}
           </ul>
-          <a className="py-2 d-md-inline-block nav-link float-right pr-0" href="#contact"><button className="btn btn-info my-sm-0" type="submit">Contact</button></a>
+          <a className="py-2 d-md-inline-block nav-link float-right pr-0" href="#contact">
+            <button className="btn btn-info my-sm-0 box-shadow zoom" type="submit">Contact</button>
+          </a>
         </div>
       </nav>
     );

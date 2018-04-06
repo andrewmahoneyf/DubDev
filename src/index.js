@@ -4,12 +4,13 @@ import { BrowserRouter as Router } from 'react-router-dom'
 import App from './components/App';
 import registerServiceWorker from './registerServiceWorker';
 import 'jquery/dist/jquery.min.js';
-import 'popper.js';
+import 'popper.js/dist/popper.min.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.min.js';
 import 'font-awesome/css/font-awesome.min.css'; 
 import './styles/index.scss';
 import ScrollToTop from './jsx/scrollTop';
+import "animate.css/animate.min.css";
 
 ReactDOM.render(
     <Router>

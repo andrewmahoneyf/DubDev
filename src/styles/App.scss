@@ -34,6 +34,17 @@ Global
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+.zoom:hover {
+    z-index: 2;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.05);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1.05);   
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.05);
+    transition: all 200ms ease-in;
+    transform: scale(1.05);
+}
 
 /* ==========================================================================
 Home
@@ -46,6 +57,12 @@ Home
     .headline {
         margin-top: 150px !important;
         background: antiquewhite;
+        -vendor-animation-duration: 2s;
+        animation-duration: 2s;
+    }
+    .btn-outline-secondary:hover {
+        background: transparent;
+        color: #6c757d;
     }
     
     @media(min-width: $breakpoint-sm){
@@ -134,6 +151,10 @@ Home
     img.inherit {
         height: inherit;
     }
+    .pulse {
+        -vendor-animation-duration: 1.5s;
+        animation-duration: 1.5s;
+    }
 
     /* Portfolio Section */
     .portfolio-item {
@@ -208,6 +229,7 @@ Home
             background-color: rgba(29, 128, 159, 0.9);
             -webkit-clip-path: inset(2rem);
             clip-path: inset(2rem);
+            border-radius: 10px;
             .caption-content {
                 color: #fff;
             }
@@ -270,14 +292,15 @@ Team
     img.rounded-circle.img-fluid {
         max-height: 250px;
     }
+    .card {
+        border:0 !important;
+    }
 }
 
 /* ==========================================================================
 Portfolio
 ========================================================================== */
 .portfolio {
-    .box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
-
     .card-img-top {
         height: 325px !important;
     }
@@ -299,12 +322,11 @@ About
 ========================================================================== */
 
 .about {
-    /* Cards */
-    @media(min-width:$breakpoint-md){
-        .card {
-            visibility: hidden;
-        }
+    .rubberBand {
+        -vendor-animation-duration: 2s;
+        animation-duration: 2s;
     }
+    /* Cards */
     .card-img-right {
         height: 100%;
         border-radius: 0 3px 3px 0;
@@ -319,13 +341,21 @@ About
         -webkit-box-flex: 0;
         flex: 0 0 auto;
     }
-    .box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
+    .card2 {
+        -vendor-animation-delay: .2s;
+        animation-delay: .2s;
+    }
+    .card3 {
+        -vendor-animation-delay: .4s;
+        animation-delay: .4s;
+    }
+    .card4 {
+        -vendor-animation-delay: .6s;
+        animation-delay: .6s;
+    }
 
 
     /* Blog */
-    .border-top { 
-        border-top: 1px solid #e5e5e5; 
-    }
     @media(max-width:$breakpoint-sm){
         .services{
             margin-left:-30px;

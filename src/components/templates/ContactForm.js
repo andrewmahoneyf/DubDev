@@ -89,12 +89,12 @@ export default class Contact extends Component {
         return (
             <section className="contact align-center">
                 <form id="contactForm" onSubmit={this.handleSubmit}>
-                    <div className="alert alert-success container w-100" id="alert" role="alert">
+                    <div className="alert alert-success container w-100 rounded box-shadow" id="alert" role="alert">
                         <h2 className="alert-heading">Your message has been sent!</h2>
                     </div>
 
                     <div className="input-group mb-3 container">
-                        <div className="input-group-prepend">
+                        <div className="input-group-prepend box-shadow">
                             <span className="input-group-text">Name</span>
                         </div>
                         <input
@@ -117,7 +117,7 @@ export default class Contact extends Component {
                     </div>
 
                     <div className="input-group mb-3 container">
-                        <div className="input-group-prepend">
+                        <div className="input-group-prepend box-shadow">
                             <span className="input-group-text">Contact</span>
                         </div>
                         <input
@@ -140,7 +140,7 @@ export default class Contact extends Component {
                     </div>
 
                     <div className="input-group mb-2 container">
-                        <div className="input-group-prepend">
+                        <div className="input-group-prepend box-shadow">
                             <span className="input-group-text">Company</span>
                         </div>
                         <input
@@ -158,7 +158,7 @@ export default class Contact extends Component {
                             type="text"
                             placeholder={placeholder}
                             id="message"
-                            className="mb-3 container"
+                            className="mb-3 container card box-shadow"
                             disabled={hasEmptyInput}
                             value={this.state.message}
                             onChange={event => this.setState(byPropKey('message', event.target.value))}
@@ -167,7 +167,7 @@ export default class Contact extends Component {
                         <button
                             disabled={isInvalid}
                             type="submit"
-                            className="btn btn-secondary btn-lg btn-block"
+                            className="btn btn-secondary btn-lg btn-block box-shadow"
                             onClick={this.handleSubmit}>Request a quote</button>
                     </div>
                 </form>

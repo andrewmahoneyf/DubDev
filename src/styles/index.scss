@@ -81,7 +81,7 @@ html, body {
 .border-top { border-top: 1px solid #e5e5e5; }
 .border-bottom { border-bottom: 1px solid #e5e5e5; }
 
-.box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
+.box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .5); }
 
 .flex-equal > * {
   -ms-flex: 1;
@@ -115,9 +115,12 @@ h1, h2, h3, h4, h5, h6 {
 .bg-purple {
   background-color:#4b3181 !important;
 }
-.bg-teal, .btn-info {
+.bg-teal {
     background-color: rgba(29, 128, 159, 0.9) !important;
-    border-color: rgba(29, 128, 159, 0.9) !important;
+}
+.btn-info {
+    background-color: rgba(29, 128, 159, 1) !important;
+    border-color: rgba(29, 128, 159, 1) !important;
 }
 .bg-faded {
     background-color: rgba(255, 255, 255, 0.85);

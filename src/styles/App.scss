@@ -300,6 +300,11 @@ About
 
 .about {
     /* Cards */
+    @media(min-width:$breakpoint-md){
+        .card {
+            visibility: hidden;
+        }
+    }
     .card-img-right {
         height: 100%;
         border-radius: 0 3px 3px 0;

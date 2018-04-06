@@ -6,6 +6,7 @@ import react from '../../images/react.png';
 import wordpress from '../../images/wordpress.jpg';
 import drupal from '../../images/drupal.png';
 import angular from '../../images/angular.jpg';
+import $ from 'jquery';
 
 export default class About extends React.Component {
   render() {
@@ -18,7 +19,7 @@ export default class About extends React.Component {
         </div>
 
         <Blog />
-        {/*<Timeline />*/}
+        <Timeline />
 
         <section className="team">
           <div className="p-3 p-md-5 bg-black mb-5">
@@ -87,10 +88,34 @@ class Blog extends React.Component {
 
 
 class Cards extends React.Component {
+   constructor(props) {
+    super(props);
+    this.handleLoad = this.handleLoad.bind(this);
+ }
+
+ componentDidMount() {
+    //this.handleLoad();
+ }
+
+ handleLoad() {
+    setTimeout(function () {
+          document.getElementById('card1').style.visibility = 'unset';
+      }, 500);
+      setTimeout(function () {
+          document.getElementById('card2').style.visibility = 'unset';
+      }, 1000);
+      setTimeout(function () {
+          document.getElementById('card3').style.visibility = 'unset';
+      }, 1500);
+      setTimeout(function () {
+          document.getElementById('card4').style.visibility = 'unset';
+      }, 2000);
+ }
+
   render() {
     return (
       <div className="mb-2 cards">
-        <div className="card flex-row mb-4 box-shadow h-md-250">
+        <div className="card flex-row mb-4 box-shadow h-md-250" id="card1">
           <div className="card-body d-flex flex-column align-items-start">
             <h3 className="mb-0 text-success">ReactJS</h3>
             <p className="card-text mb-auto">A JavaScript library for building user interfaces and powerful apps maintained by Facebook.</p>
@@ -98,7 +123,7 @@ class Cards extends React.Component {
           </div>
           <img className="card-img-right flex-auto d-md-none d-lg-block" src={react} alt="Card cap" />
         </div>
-        <div className="card flex-row mb-4 box-shadow h-md-250">
+        <div className="card flex-row mb-4 box-shadow h-md-250" id="card2">
           <div className="card-body d-flex flex-column align-items-start">
             <h3 className="mb-0 text-success">WordPress</h3>
             <p className="card-text mb-auto">WordPress.com powers beautiful websites for businesses, professionals, and bloggers.</p>
@@ -106,7 +131,7 @@ class Cards extends React.Component {
           </div>
           <img className="card-img-right flex-auto d-md-none d-lg-block" src={wordpress} alt="Card cap" />
         </div>
-        <div className="card flex-row mb-4 box-shadow h-md-250">
+        <div className="card flex-row mb-4 box-shadow h-md-250" id="card3">
           <div className="card-body d-flex flex-column align-items-start">
             <h3 className="mb-0 text-success">Drupal 8</h3>
             <p className="card-text mb-auto">Drupal is free, open source software, produced by over a million users in 230 countries.</p>
@@ -114,7 +139,7 @@ class Cards extends React.Component {
           </div>
           <img className="card-img-right flex-auto d-md-none d-lg-block" src={drupal} alt="Card cap" />
         </div>
-        <div className="card flex-row mb-4 box-shadow h-md-250">
+        <div className="card flex-row mb-4 box-shadow h-md-250" id="card4">
           <div className="card-body d-flex flex-column align-items-start">
             <h3 className="mb-0 text-success">AngularJS</h3>
             <p className="card-text mb-auto">AngularJS is a JavaScript-based front-end web application framework maintained by Google.</p>

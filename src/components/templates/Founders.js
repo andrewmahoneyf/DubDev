@@ -8,7 +8,7 @@ export default class Founders extends React.Component {
     return (
       <div className="container pb-5 team">
         <div className="row text-center equal">
-          <div className="col-md-6 mb-2 mb-md-4 px-5 animated zoomIn">
+          <div className="col-md-6 mb-4 px-5 animated zoomIn">
             <div className="card text-white box-shadow zoom">
               <div className="w-100 h-50 bg-teal rounded-top">
                 <div className="avatar mx-auto my-3">

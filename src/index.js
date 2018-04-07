@@ -11,6 +11,10 @@ import 'font-awesome/css/font-awesome.min.css';
 import './styles/index.scss';
 import ScrollToTop from './jsx/scrollTop';
 import "animate.css/animate.min.css";
+import ReactGA from "react-ga";
+
+ReactGA.initialize('UA-117108905-1');
+
 
 ReactDOM.render(
     <Router>

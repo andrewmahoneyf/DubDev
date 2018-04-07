@@ -13,7 +13,12 @@ import '../styles/Fontawesome.scss';
 import * as routes from '../constants/routes';
 import '../jsx/navbar.js';
 import '../jsx/smoothScroll.js';
+import ReactGA from "react-ga"; 
 
+export function fireTracking(nextState) {
+  const { pathname } = nextState.location // this gives you the next URL
+  ReactGA.pageview(pathname)
+}
 
 export default class App extends Component {
   render() {
@@ -42,14 +47,14 @@ class Main extends React.Component {
     return (
       <main id='top' role="main">
         <Switch>
-          <Route exact path={routes.LANDING} component={Home} />
-          <Route path={routes.ABOUT} component={About} />
-          <Route path={routes.WEB_PROJECTS} component={Web} />
+          <Route exact path={routes.LANDING} onEnter={ fireTracking } component={Home} />
+          <Route path={routes.ABOUT} onEnter={ fireTracking } component={About} />
+          <Route path={routes.WEB_PROJECTS} onEnter={ fireTracking } component={Web} />
           {/*<Route path={routes.MOBILE_PROJECTS} component={Mobile} />*/}
-          <Route exact path={routes.PRIVACY} component={Privacy}/>
-          <Route exact path={routes.TERMS} component={Terms}/>
-          <Route exact path={routes.NOT_FOUND} component={PageNotFound}/>
-          <Redirect to={routes.NOT_FOUND}/>
+          <Route exact path={routes.PRIVACY} onEnter={ fireTracking } component={Privacy}/>
+          <Route exact path={routes.TERMS} onEnter={ fireTracking } component={Terms}/>
+          <Route exact path={routes.NOT_FOUND} onEnter={ fireTracking } component={PageNotFound}/>
+          <Redirect to={routes.NOT_FOUND} />
         </Switch>
       </main>
     );

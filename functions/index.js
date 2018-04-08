@@ -23,7 +23,7 @@ exports.modifyMessages = functions.firestore
 
         // Send data to SendGrid mail server
         const msg = {
-            to: 'andrew.mahoney.f@gmail.com',
+            to: 'info@dubdev.com',
             from: document.email,
             subject: 'New contact form submission',
             text: 'Contact form submission',

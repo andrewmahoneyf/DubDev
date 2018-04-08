@@ -74,7 +74,7 @@ class Intro extends React.Component {
                                 <span className="section-heading-upper">Budget friendly</span>
                                 <span className="section-heading-lower">Custom Websites</span>
                             </h2>
-                            <p className="mb-3 d-none d-sm-block">Whether you need a completely new site built for you, or just some updates to your current one, we can do it all! We specialize in React development but have all of the bases covered.</p>
+                            <p className="mb-3 d-none d-sm-block">Whether you need a completely new site built for you or just some updates to your current one, we can do it all! We specialize in React development but have all of the bases covered.</p>
                             <div className="intro-button mx-auto">
                                 <Link className="btn btn-info box-shadow zoom" to={routes.ABOUT}>About our company</Link>
                             </div>
@@ -171,7 +171,7 @@ class Portfolio extends React.Component {
                             <a className="portfolio-item rounded" href="https://bigscontracting.com" target="_blank" rel="noopener noreferrer">
                                 <span className="caption">
                                     <span className="caption-content align-middle m-auto">
-                                        <h2>Big's Contrating Agency</h2>
+                                        <h2>Big's Contracting Agency</h2>
                                         <p className="mb-0">A powerful React app integrated with Firebase<span className="d-none d-lg-inline"> for authentication, cloud storage, and firestore database</span>.</p>
                                     </span>
                                 </span>

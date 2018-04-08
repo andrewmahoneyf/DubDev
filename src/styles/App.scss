@@ -369,6 +369,10 @@ About
         padding: 0;
         list-style: none;
     }
+    
+    .timeline img {
+        height: 100%;
+    }
 
     .timeline:before {
         position: absolute;
@@ -474,6 +478,10 @@ About
     .timeline .timeline-body > ul,
     .timeline .timeline-body > p {
         margin-bottom: 0;
+    }
+
+    .timeline-last {
+        margin-top: -5em;
     }
 
     @media (min-width: $breakpoint-sm) {

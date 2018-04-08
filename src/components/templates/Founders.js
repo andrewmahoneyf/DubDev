@@ -31,6 +31,9 @@ export default class Founders extends React.Component {
                   <a className="icons-sm ins-ic" href="https://andrewmf.com/" target="_blank" rel="noopener noreferrer">
                     <i className="fa fa-globe blue-text"> </i>
                   </a>
+                  <a href="mailto:andrew@dubdev.com" target="_blank" rel="noopener noreferrer">
+                    <i className="fa fa-envelope" aria-label="email"></i>
+                  </a>
                 </ul>
               </div>
             </div>
@@ -58,6 +61,9 @@ export default class Founders extends React.Component {
                   </a>
                   <a className="icons-sm ins-ic" href="" target="_blank" rel="noopener noreferrer">
                     <i className="fa fa-globe blue-text"> </i>
+                  </a>
+                  <a href="mailto:james@dubdev.com" target="_blank" rel="noopener noreferrer">
+                    <i className="fa fa-envelope" aria-label="email"></i>
                   </a>
                 </ul>
               </div>

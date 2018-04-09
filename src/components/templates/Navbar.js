@@ -22,7 +22,7 @@ export default class Navigation extends React.Component {
               <Link className="py-2d-md-inline-block nav-link" to={routes.ABOUT}>About Us</Link>
             </li>
             <li className="nav-item pt-md-1">
-              <Link className="py-2d-md-inline-block nav-link" to={routes.WEB_PROJECTS}>Portfolio</Link>
+              <Link className="py-2d-md-inline-block nav-link" to={routes.PORTFOLIO}>Portfolio</Link>
             </li>
             {/* //Drodown for when we have mobile apps to display
               <li className="nav-item dropdown pt-2">

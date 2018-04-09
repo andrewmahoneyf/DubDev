@@ -152,7 +152,7 @@ class Portfolio extends React.Component {
             <div className="content-section pb-3 pt-2" id="portfolio">
                 <div className="container-fluid">
                     <div className="content-section-heading text-center">
-                        <Link to={routes.WEB_PROJECTS}><h1 className="text-secondary mb-0">Portfolio</h1></Link>
+                        <Link to={routes.PORTFOLIO}><h1 className="text-secondary mb-0">Portfolio</h1></Link>
                         <h2 className="display-4">Recent Projects</h2>
                     </div>
                     <div className="row no-gutters">
@@ -190,7 +190,7 @@ class Portfolio extends React.Component {
                             </a>
                         </div>
                         <div className="col-md-6 p-md-1 p-xl-3">
-                            <Link className="portfolio-item view-more rounded" to={routes.WEB_PROJECTS}>
+                            <Link className="portfolio-item view-more rounded" to={routes.PORTFOLIO}>
                                 <span className="caption">
                                     <span className="caption-content align-middle m-auto">
                                         <h2>View More</h2>

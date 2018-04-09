@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Route, Switch, Redirect } from 'react-router-dom';
 import Home from './pages/Home';
 import About from './pages/About';
-import { Web } from './pages/Portfolio';
+import Portfolio from './pages/Portfolio';
 import Navigation from './templates/Navbar';
 import Footer from './templates/Footer';
 import Privacy from './templates/PrivacyPolicy';
@@ -49,8 +49,7 @@ class Main extends React.Component {
         <Switch>
           <Route exact path={routes.LANDING} onEnter={ fireTracking } component={Home} />
           <Route path={routes.ABOUT} onEnter={ fireTracking } component={About} />
-          <Route path={routes.WEB_PROJECTS} onEnter={ fireTracking } component={Web} />
-          {/*<Route path={routes.MOBILE_PROJECTS} component={Mobile} />*/}
+          <Route path={routes.PORTFOLIO} onEnter={ fireTracking } component={Portfolio} />
           <Route exact path={routes.PRIVACY} onEnter={ fireTracking } component={Privacy}/>
           <Route exact path={routes.TERMS} onEnter={ fireTracking } component={Terms}/>
           <Route exact path={routes.NOT_FOUND} onEnter={ fireTracking } component={PageNotFound}/>

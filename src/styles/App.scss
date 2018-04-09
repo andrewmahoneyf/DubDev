@@ -313,6 +313,31 @@ Portfolio
     a:hover {
         text-decoration: none;
     }
+
+    /* Slideshow */
+    .slideshow {
+        height: 200px;
+        max-width: 1300px;
+        margin: 0 auto;
+        position: relative;
+        overflow: hidden;
+        transform: translate3d(0, 0, 0);
+    }
+    .slideshow > div {
+        height: 200px;
+        width: 3789px;
+        background: url('../images/collage.png');
+        transform: translate3d(0, 0, 0);
+    }
+    .slideshow .mover {
+        animation: moveSlideshow 12s linear infinite;
+    }
+
+    @keyframes moveSlideshow {
+        100% { 
+            transform: translateX(-66.6666%);  
+        }
+    }
 }
 
 

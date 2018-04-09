@@ -5,7 +5,6 @@ import wordpress from '../../images/wordpress.jpg';
 import drupal from '../../images/drupal.png';
 import angular from '../../images/angular.jpg';
 import Founders from '../templates/Founders';
-import $ from 'jquery';
 import timeline1 from '../../images/schedule.png';
 import timeline2 from '../../images/wireframe.jpeg';
 import timeline3 from '../../images/development.jpg';
@@ -31,7 +30,7 @@ export default class About extends React.Component {
               <p className="lead my-3 text-white">Our team has a wide range of knowledge and experience in web development. Check out their sites below to learn more about DubDev's founders.</p>
             </div>
           </div>
-          <Founders />
+          <Founders showWow={true} />
         </section>
       </section>
     );
@@ -147,7 +146,7 @@ class Timeline extends React.Component {
             <div class="col-lg-12">
               <ul class="timeline">
                 <li>
-                  <div class="timeline-image box-shadow animated zoomIn">
+                  <div class="timeline-image box-shadow animated zoomIn wow" data-wow-delay="0s">
                     <img class="rounded-circle img-fluid" src={timeline1} alt="timeline-intro" />
                   </div>
                   <div class="timeline-panel">
@@ -163,7 +162,7 @@ class Timeline extends React.Component {
                   </div>
                 </li>
                 <li class="timeline-inverted">
-                  <div class="timeline-image box-shadow animated zoomIn">
+                  <div class="timeline-image box-shadow animated zoomIn wow">
                     <img class="rounded-circle img-fluid" src={timeline2} alt="wireframe" />
                   </div>
                   <div class="timeline-panel">
@@ -180,7 +179,7 @@ class Timeline extends React.Component {
                   </div>
                 </li>
                 <li>
-                  <div class="timeline-image box-shadow animated zoomIn">
+                  <div class="timeline-image box-shadow animated zoomIn wow">
                     <img class="rounded-circle img-fluid" src={timeline3} alt="coding-design" />
                   </div>
                   <div class="timeline-panel">
@@ -197,7 +196,7 @@ class Timeline extends React.Component {
                   </div>
                 </li>
                 <li class="timeline-inverted">
-                  <div class="timeline-image box-shadow animated zoomIn">
+                  <div class="timeline-image box-shadow animated zoomIn wow">
                     <img class="rounded-circle img-fluid" src={timeline4} alt="finished-design" />
                   </div>
                   <div class="timeline-panel">
@@ -214,7 +213,7 @@ class Timeline extends React.Component {
                   </div>
                 </li>
                 <li class="timeline-inverted timeline-last">
-                  <div class="timeline-image box-shadow animated zoomIn">
+                  <div class="timeline-image box-shadow animated zoomIn wow">
                     <h4>Be Part
                     <br />Of Our
                     <br />Story!</h4>

@@ -350,15 +350,15 @@ About
         -vendor-animation-duration: 2s;
         animation-duration: 2s;
     }
+    
     /* Cards */
     .card-img-right {
         height: 100%;
         border-radius: 0 3px 3px 0;
     }
-    @media(max-height:$breakpoint-md){
-        .cards img {
-            max-height: 175px;
-        }
+    .cards img {
+        max-width: 175px;
+        max-height: 175px;
     }
     .flex-auto {
         -ms-flex: 0 0 auto;

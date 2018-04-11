@@ -46,7 +46,7 @@ export default class Home extends React.Component {
                         <Portfolio />
 
                         <div className="founders">
-                            <h1 className="display-4 pt-md-5 pb-2">Meet Our Developers</h1>
+                            <h1 className="display-4 pt-md-5 pb-2">Meet Our Founders</h1>
                             <Founders />
                         </div>
                     </section>

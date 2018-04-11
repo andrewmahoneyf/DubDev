@@ -23,7 +23,7 @@ export default class Founders extends React.Component {
                 <h5 className="font-weight-bold">
                   <strong>Andrew Mahoney-Fernandes</strong>
                 </h5>
-                <p className="grey-text">Co-Founder / Head of Front-End Development</p>
+                <p className="grey-text">Co-Founder / Lead Full-Stack Developer</p>
                 <p>Andrew is a senior at the University of Washington with a strong background in web development. He has experience monitoring and building complex websites, with several internships to date for various companies as well as the University of Washington.</p>
                 <ul className="list-unstyled">
                   <a className="icons-sm fb-ic" href="https://github.com/andrewmahoneyf" target="_blank" rel="noopener noreferrer">
@@ -54,7 +54,7 @@ export default class Founders extends React.Component {
                 <h5 className="font-weight-bold">
                   <strong>James Lee</strong>
                 </h5>
-                <p className="grey-text">Co-Founder / Head of Back-End Development</p>
+                <p className="grey-text">Co-Founder / Lead Full-Stack Developer</p>
                 <p>James is a senior at the University of Washington and focuses on creating back-end solutions for clients. As a student, he received his certification for database management and has experience building a range of web applications from scratch.</p>
                 <ul className="list-unstyled">
                   <a className="icons-sm fb-ic" href="https://github.com/Sanghawk" target="_blank" rel="noopener noreferrer">

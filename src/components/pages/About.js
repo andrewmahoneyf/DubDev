@@ -26,7 +26,7 @@ export default class About extends React.Component {
         <section className="team container-fluid">
           <div className="p-3 p-md-5 bg-black mb-5 box-shadow rounded">
             <div className="col-md-6 px-0 container">
-              <h1 className="display-4 pt-md-4">Meet Our Developers</h1>
+              <h1 className="display-4 pt-md-4">Meet Our Founders</h1>
               <p className="lead my-3 text-white">Our team has a wide range of knowledge and experience in web development. Check out their sites below to learn more about DubDev's founders.</p>
             </div>
           </div>

@@ -5,9 +5,9 @@ import logo from '../../images/DubDevLogo.png';
 import background from "../../images/headerBackground.png";
 import Footer from "../templates/Footer";
 import code from "../../images/code.jpg";
-import coinglomerate from "../../images/coinglomerate.png";
-import bigs from "../../images/bigscontracting.png";
-import steppir from "../../images/newsletter.png";
+import coinglomerate from "../../images/projects/coinglomerate.png";
+import bigs from "../../images/projects/bigscontracting.png";
+import steppir from "../../images/projects/newsletter.png";
 import work from "../../images/working.jpeg";
 import native from "../../images/react_native.jpeg";
 import web from "../../images/web.png";
@@ -29,7 +29,7 @@ export default class Home extends React.Component {
                 <section className="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center" style={headerStyle} id="head">
                     <div className="col-md-8 p-4 mx-auto my-5 headline box-shadow rounded animated fadeIn">
                         <img src={logo} alt="logo" className="w-100" />
-                        <p className="lead font-weight-normal">Making websites affordable for small businesses in the Seattle &amp; Bellevue area</p>
+                        <p className="lead font-weight-normal">Affordable websites for small businesses in the Seattle &amp; Bellevue area</p>
                         <a className="btn btn-outline-secondary btn-block btn-lg box-shadow" href="#contact">
                             Get a quote
                         </a>

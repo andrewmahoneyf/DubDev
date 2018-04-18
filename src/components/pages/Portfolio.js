@@ -22,6 +22,8 @@ export default class Portfolio extends React.Component {
         );
     }
 }
+
+/* Client logos */
 class Clients extends React.Component {
     render() {
         return (
@@ -48,6 +50,8 @@ class Clients extends React.Component {
         );
     }
 }
+
+/* Project cards */
 class WebProjects extends React.Component {
     render() {
         return (
@@ -59,7 +63,8 @@ class WebProjects extends React.Component {
                                 <span className="caption">
                                     <span className="caption-content align-middle m-auto">
                                         <h2>AlgoSwitch by Coinglomerate</h2>
-                                        <p className="mb-0">A cryptocurrency mining pool web portal for Coinglomerate's revolutionary software, AlgoSwitch.</p>
+                                        <p className="mb-0">A web portal for Coinglomerate's cryptocurrency mining pool to connect with their revolutionary
+                                                            software, AlgoSwitch.</p>
                                     </span>
                                 </span>
                                 <img className="card-img-top" src={require('../../images/projects/algoswitch.png')} alt="Card cap" />
@@ -78,8 +83,8 @@ class WebProjects extends React.Component {
                                 <span className="caption">
                                     <span className="caption-content align-middle m-auto">
                                         <h2>Big's Contracting Agency</h2>
-                                        <p className="mb-0">A powerful react app configured with Firebase for backend. This application provides authentication 
-                                                            for client and contractor data along with the ability to create and sign up for jobs.</p>
+                                        <p className="mb-0">A powerful react app configured with Firebase Cloud Firestore. This application provides authentication
+                                                            for client's and contractor's data along with the ability to create and sign up for jobs.</p>
                                     </span>
                                 </span>
                                 <img className="card-img-top" src={require('../../images/projects/bigscontracting.png')} alt="Card cap" />
@@ -98,7 +103,8 @@ class WebProjects extends React.Component {
                                 <span className="caption">
                                     <span className="caption-content align-middle m-auto">
                                         <h2>Coinglomerate LLC</h2>
-                                        <p className="mb-0">A classic single page webstite built with HTML5, CSS, and JavaScript for interactive scrolling and animation.</p>
+                                        <p className="mb-0">A classic single page website built with HTML5, CSS, and JavaScript including
+                                                            interactive scrolling and animation.</p>
                                     </span>
                                 </span>
                                 <img className="card-img-top" src={require('../../images/projects/coinglomerate.png')} alt="Card cap" />
@@ -117,8 +123,8 @@ class WebProjects extends React.Component {
                                 <span className="caption">
                                     <span className="caption-content align-middle m-auto">
                                         <h2>SteppIR Newsletter</h2>
-                                        <p className="mb-0">An HTML5 email newsletter created for SteppIR Communication Systems. We provide monthly
-                                                            updates to send out to their worldwide customer base</p>
+                                        <p className="mb-0">An HTML5 email newsletter developed for SteppIR Communication Systems. We update their
+                                                            newsletter monthly and send it out to their worldwide customer base.</p>
                                     </span>
                                 </span>
                                 <img className="card-img-top" src={require('../../images/projects/newsletter.png')} alt="Card cap" />
@@ -137,7 +143,7 @@ class WebProjects extends React.Component {
                                 <span className="caption">
                                     <span className="caption-content align-middle m-auto">
                                         <h2>SteppIR Communication Systems</h2>
-                                        <p className="mb-0">A WordPress site we constantly monitor and update along with creating several web pages.</p>
+                                        <p className="mb-0">A WordPress site we monitor and update constantly with new content and web pages.</p>
                                     </span>
                                 </span>
                                 <img className="card-img-top" src={require('../../images/projects/steppir.png')} alt="Card cap" />
@@ -151,47 +157,6 @@ class WebProjects extends React.Component {
                                 </div>
                             </div>
                         </a>
-                    </div>
-                </div>
-            </div>
-        );
-    }
-}
-
-class MobileProjects extends React.Component {
-    render() {
-        return (
-            <div className="album py-5 bg-light">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-md-4">
-                            <div className="card mb-4 box-shadow">
-                                <img className="card-img-top" src={''} alt="Card cap" />
-                                <div className="card-body">
-                                    <p className="card-text">OnPoint Real Estate</p>
-                                    <div className="d-flex justify-content-between align-items-center">
-                                        <a className="btn-group" href="" target="_blank" rel="noopener noreferrer">
-                                            <button type="button" className="btn btn-sm btn-outline-secondary">View</button>
-                                        </a>
-                                        <small className="text-muted">04/18</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-md-4">
-                            <div className="card mb-4 box-shadow">
-                                <img className="card-img-top" src={''} alt="Card cap" />
-                                <div className="card-body">
-                                    <p className="card-text">Big's Mobile Detailing</p>
-                                    <div className="d-flex justify-content-between align-items-center">
-                                        <a className="btn-group" href="" target="_blank" rel="noopener noreferrer">
-                                            <button type="button" className="btn btn-sm btn-outline-secondary">View</button>
-                                        </a>
-                                        <small className="text-muted">05/18</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>

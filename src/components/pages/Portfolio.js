@@ -29,16 +29,16 @@ class Clients extends React.Component {
         return (
             <div className="container-fluid">
                 <div className="row animated slideInLeft wow">
-                    <a className="col-6 col-md-3 col-lg-2 align-middle my-auto" href="https://steppir.com/" target="_blank" rel="noopener noreferrer">
+                    <a className="col-6 col-md-3 col-lg-2 align-middle my-auto logo" href="https://steppir.com/" target="_blank" rel="noopener noreferrer">
                         <img src={require('../../images/clients/steppir.png')} className='w-100' alt="Client logo" />
                     </a>
-                    <a className="col-6 col-md-3 col-lg-2 align-middle my-auto" href="http://www.onpoint-properties.com/" target="_blank" rel="noopener noreferrer">
+                    <a className="col-6 col-md-3 col-lg-2 align-middle my-auto logo" href="http://www.onpoint-properties.com/" target="_blank" rel="noopener noreferrer">
                         <img src={require('../../images/clients/onpoint.png')} className='w-100' alt="Client logo" />
                     </a>
-                    <a className="col-6 col-md-3 col-lg-2 align-middle my-auto" href="https://bigscontracting.com/" target="_blank" rel="noopener noreferrer">
+                    <a className="col-6 col-md-3 col-lg-2 align-middle my-auto logo" href="https://bigscontracting.com/" target="_blank" rel="noopener noreferrer">
                         <img src={require('../../images/clients/bigscontracting.png')} className='w-100' alt="Client logo" />
                     </a>
-                    <a className="col-6 col-md-3 col-lg-2 align-middle my-auto" href="https://coinglomerate.co/" target="_blank" rel="noopener noreferrer">
+                    <a className="col-6 col-md-3 col-lg-2 align-middle my-auto logo" href="https://coinglomerate.co/" target="_blank" rel="noopener noreferrer">
                         <img src={require('../../images/clients/coinglomerate.png')} className='w-100' alt="Client logo" />
                     </a>
                 </div>

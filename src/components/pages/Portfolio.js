@@ -32,6 +32,9 @@ class Clients extends React.Component {
                     <a className="col-6 col-md-3 col-lg-2 align-middle my-auto logo" href="https://steppir.com/" target="_blank" rel="noopener noreferrer">
                         <img src={require('../../images/clients/steppir.png')} className='w-100' alt="Client logo" />
                     </a>
+                    <a className="col-6 col-md-3 col-lg-2 align-middle my-auto logo" href="https://www.chartercoin.com/index.php" target="_blank" rel="noopener noreferrer">
+                        <img src={require('../../images/clients/chartercoin.png')} className='w-100' alt="Client logo" />
+                    </a>
                     <a className="col-6 col-md-3 col-lg-2 align-middle my-auto logo" href="http://www.onpoint-properties.com/" target="_blank" rel="noopener noreferrer">
                         <img src={require('../../images/clients/onpoint.png')} className='w-100' alt="Client logo" />
                     </a>
@@ -58,7 +61,26 @@ class WebProjects extends React.Component {
             <div className="album pb-5 bg-light">
                 <div className="container-fluid">
                     <div className="row">
-                        <a className="col-md-6 col-lg-4 animated fadeInLeft wow" href="https://algoswitch.firebaseapp.com/" target="_blank" rel="noopener noreferrer">
+                    <a className="col-md-6 col-lg-4 animated fadeInLeft wow" href="https://www.chartercoin.com/index.php" target="_blank" rel="noopener noreferrer">
+                            <div className="card mb-4 box-shadow zoom">
+                                <span className="caption">
+                                    <span className="caption-content align-middle m-auto">
+                                        <h2>Chartercoin</h2>
+                                        <p className="mb-0">A website built with Joomla CMS for a local blockchain startup providing the world's first quantum resistant encryption.</p>
+                                    </span>
+                                </span>
+                                <img className="card-img-top" src={require('../../images/projects/chartercoin.png')} alt="Card cap" />
+                                <div className="card-body">
+                                    <p className="card-text">Chartercoin</p>
+                                    <div className="d-flex justify-content-between align-items-center">
+                                        <a className="btn-group">
+                                        </a>
+                                        <small className="text-muted">05/01</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a className="col-md-6 col-lg-4 animated zoomIn wow" href="https://algoswitch.firebaseapp.com/" target="_blank" rel="noopener noreferrer">
                             <div className="card mb-4 box-shadow zoom">
                                 <span className="caption">
                                     <span className="caption-content align-middle m-auto">
@@ -78,7 +100,7 @@ class WebProjects extends React.Component {
                                 </div>
                             </div>
                         </a>
-                        <a className="col-md-6 col-lg-4 animated zoomIn wow" href="https://bigscontracting.com/" target="_blank" rel="noopener noreferrer">
+                        <a className="col-md-6 col-lg-4 animated fadeInRight wow" href="https://bigscontracting.com/" target="_blank" rel="noopener noreferrer">
                             <div className="card mb-4 box-shadow zoom">
                                 <span className="caption">
                                     <span className="caption-content align-middle m-auto">
@@ -98,7 +120,7 @@ class WebProjects extends React.Component {
                                 </div>
                             </div>
                         </a>
-                        <a className="col-md-6 col-lg-4 animated zoomIn wow" href="https://coinglomerate.co" target="_blank" rel="noopener noreferrer">
+                        <a className="col-md-6 col-lg-4 animated fadeInLeft wow" href="https://coinglomerate.co" target="_blank" rel="noopener noreferrer">
                             <div className="card mb-4 box-shadow zoom">
                                 <span className="caption">
                                     <span className="caption-content align-middle m-auto">
@@ -118,7 +140,7 @@ class WebProjects extends React.Component {
                                 </div>
                             </div>
                         </a>
-                        <a className="col-md-6 col-lg-4 animated fadeInRight wow" href="https://andrewmahoneyf.github.io/SteppIR-Newsletter/" target="_blank" rel="noopener noreferrer">
+                        <a className="col-md-6 col-lg-4 animated zoomIn wow" href="https://andrewmahoneyf.github.io/SteppIR-Newsletter/" target="_blank" rel="noopener noreferrer">
                             <div className="card mb-4 box-shadow zoom">
                                 <span className="caption">
                                     <span className="caption-content align-middle m-auto">

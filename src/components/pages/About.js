@@ -4,6 +4,8 @@ import react from '../../images/react.png';
 import wordpress from '../../images/wordpress.jpg';
 import drupal from '../../images/drupal.png';
 import angular from '../../images/angular.jpg';
+import joomla from '../../images/joomla.png';
+import firebase from '../../images/firebase.png';
 import Founders from '../templates/Founders';
 import timeline1 from '../../images/schedule.png';
 import timeline2 from '../../images/wireframe.jpeg';
@@ -78,7 +80,19 @@ class Blog extends React.Component {
                 any CMS or JavaScript library you desire.
               </p>
             </div>
+            <div className="card flex-row mb-4 box-shadow h-md-250 animated slideInRight card2">
+              <div className="card-body d-flex flex-column align-items-start">
+                <h3 className="mb-0 text-success">Firebase</h3>
+                <p className="card-text mb-auto">
+                  Firebase is our prefered web and mobile development platform. We can provide hosting, powerful 
+                  databases, user authentication, and more with Firebase. <br/>Contact us below for a quote.
+                </p>
+                <a href="https://firebase.google.com/" target="_blank" rel="noopener noreferrer">Learn more</a>
+              </div>
+              <img className="card-img-right flex-auto d-md-none d-lg-block firebase" src={firebase} alt="Card cap" height="225" />
+            </div>
           </div>
+
           <aside className="col-md-5 blog-sidebar">
             <Cards />
           </aside>
@@ -124,6 +138,14 @@ class Cards extends React.Component {
             <a href="https://angularjs.org/" target="_blank" rel="noopener noreferrer">Learn more</a>
           </div>
           <img className="card-img-right flex-auto d-md-none d-lg-block" src={angular} alt="Card cap" />
+        </div>
+        <div className="card flex-row mb-4 box-shadow h-md-250 animated slideInRight card4">
+          <div className="card-body d-flex flex-column align-items-start">
+            <h3 className="mb-0 text-success">Joomla!</h3>
+            <p className="card-text mb-auto">Joomla! is a free and open-source content management system, which enables you to publishing web content.</p>
+            <a href="https://www.joomla.org/" target="_blank" rel="noopener noreferrer">Learn more</a>
+          </div>
+          <img className="card-img-right flex-auto d-md-none d-lg-block" src={joomla} alt="Card cap" />
         </div>
       </div>
     );
@@ -171,7 +193,7 @@ class Timeline extends React.Component {
                     </div>
                     <div class="timeline-body">
                       <p class="text-muted">
-                        We like to carefully plan out our projects to guarantee your satisfaction. A 
+                        We like to carefully plan out our projects to guarantee your satisfaction. A
                         fundamental step to this is laying out your ideas and content in a wireframe.
                         After the plan is set, we require a 50% down deposit to start development.
                       </p>
@@ -188,7 +210,7 @@ class Timeline extends React.Component {
                     </div>
                     <div class="timeline-body">
                       <p class="text-muted">
-                        We will set a halfway mark for the project depending on our proposed time schedule. 
+                        We will set a halfway mark for the project depending on our proposed time schedule.
                         At this point, we will provide a public URL for you to watch our progress live and
                         provide any feedback along the way.
                       </p>
@@ -206,7 +228,7 @@ class Timeline extends React.Component {
                     <div class="timeline-body">
                       <p class="text-muted">
                         At this point, we will display our final deliverable and give you an opportunity for any
-                        last minute adjustments. After the project is approved and the final payment has been made 
+                        last minute adjustments. After the project is approved and the final payment has been made
                         we will either send the code to you or host the site if requested.
                       </p>
                     </div>

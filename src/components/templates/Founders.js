@@ -63,7 +63,7 @@ export default class Founders extends React.Component {
                   <a className="icons-sm ins-ic" href="https://www.linkedin.com/in/james-lee-5a992a115/" target="_blank" rel="noopener noreferrer">
                     <i className="fa fa-linkedin blue-text"> </i>
                   </a>
-                  <a className="icons-sm ins-ic" href="" target="_blank" rel="noopener noreferrer">
+                  <a className="icons-sm ins-ic" href="https://sanghawk.com/" target="_blank" rel="noopener noreferrer">
                     <i className="fa fa-globe blue-text"> </i>
                   </a>
                   <a href="mailto:james@dubdev.com" target="_blank" rel="noopener noreferrer">

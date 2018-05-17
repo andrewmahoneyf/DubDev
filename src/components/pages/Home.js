@@ -6,7 +6,6 @@ import background from "../../images/headerBackground.png";
 import Footer from "../templates/Footer";
 import code from "../../images/code.jpg";
 import coinglomerate from "../../images/projects/coinglomerate.png";
-import bigs from "../../images/projects/bigscontracting.png";
 import steppir from "../../images/projects/newsletter.png";
 import work from "../../images/working.jpeg";
 import native from "../../images/react_native.jpeg";
@@ -168,14 +167,14 @@ class Portfolio extends React.Component {
                             </a>
                         </div>
                         <div className="col-md-6 p-md-1 p-xl-3">
-                            <a className="portfolio-item rounded" href="https://bigscontracting.com" target="_blank" rel="noopener noreferrer">
+                            <a className="portfolio-item rounded" href="http://www.onpoint-properties.com/" target="_blank" rel="noopener noreferrer">
                                 <span className="caption">
                                     <span className="caption-content align-middle m-auto">
-                                        <h2>Big's Contracting Agency</h2>
-                                        <p className="mb-0">A powerful React app integrated with Firebase<span className="d-none d-lg-inline"> for authentication, cloud storage, and firestore database</span>.</p>
+                                        <h2>Onpoint Real Estate Services</h2>
+                                        <p className="mb-0">Complete redesign of Onpoint's WordPress site<span className="d-none d-lg-inline"> including additions such as integrating an MLS API for property searches</span>.</p>
                                     </span>
                                 </span>
-                                <img className="img-fluid" src={bigs} alt="" />
+                                <img className="img-fluid" src={require('../../images/projects/onpoint.png')} alt="" />
                             </a>
                         </div>
                         <div className="col-md-6 p-md-1 p-xl-3">

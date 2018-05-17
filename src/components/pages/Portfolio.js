@@ -61,7 +61,26 @@ class WebProjects extends React.Component {
             <div className="album pb-5 bg-light">
                 <div className="container-fluid">
                     <div className="row">
-                    <a className="col-md-6 col-lg-4 animated fadeInLeft wow" href="https://www.chartercoin.com/index.php" target="_blank" rel="noopener noreferrer">
+                        <a className="col-md-6 col-lg-4 animated fadeInLeft wow" href="http://www.onpoint-properties.com/" target="_blank" rel="noopener noreferrer">
+                            <div className="card mb-4 box-shadow zoom">
+                                <span className="caption">
+                                    <span className="caption-content align-middle m-auto">
+                                        <h2>Onpoint Real Estate</h2>
+                                        <p className="mb-0">Complete redesign of Onpoint's WordPress site including additions such as integrating an MLS API for property searches.</p>
+                                    </span>
+                                </span>
+                                <img className="card-img-top" src={require('../../images/projects/onpoint.png')} alt="Card cap" />
+                                <div className="card-body">
+                                    <p className="card-text">Onpoint Real Estate Services</p>
+                                    <div className="d-flex justify-content-between align-items-center">
+                                        <a className="btn-group">
+                                        </a>
+                                        <small className="text-muted">05/25</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a className="col-md-6 col-lg-4 animated zoomIn wow" href="https://www.chartercoin.com/index.php" target="_blank" rel="noopener noreferrer">
                             <div className="card mb-4 box-shadow zoom">
                                 <span className="caption">
                                     <span className="caption-content align-middle m-auto">
@@ -80,12 +99,12 @@ class WebProjects extends React.Component {
                                 </div>
                             </div>
                         </a>
-                        <a className="col-md-6 col-lg-4 animated zoomIn wow" href="https://algoswitch.firebaseapp.com/" target="_blank" rel="noopener noreferrer">
+                        <a className="col-md-6 col-lg-4 animated fadeInRight wow" href="https://algoswitch.firebaseapp.com/" target="_blank" rel="noopener noreferrer">
                             <div className="card mb-4 box-shadow zoom">
                                 <span className="caption">
                                     <span className="caption-content align-middle m-auto">
                                         <h2>AlgoSwitch by Coinglomerate</h2>
-                                        <p className="mb-0">A web portal for Coinglomerate's cryptocurrency mining pool to connect with their revolutionary
+                                        <p className="mb-0">An authenticated web portal for Coinglomerate's cryptocurrency mining pool to connect with their revolutionary
                                                             software, AlgoSwitch.</p>
                                     </span>
                                 </span>
@@ -100,47 +119,7 @@ class WebProjects extends React.Component {
                                 </div>
                             </div>
                         </a>
-                        <a className="col-md-6 col-lg-4 animated fadeInRight wow" href="https://bigscontracting.com/" target="_blank" rel="noopener noreferrer">
-                            <div className="card mb-4 box-shadow zoom">
-                                <span className="caption">
-                                    <span className="caption-content align-middle m-auto">
-                                        <h2>Big's Contracting Agency</h2>
-                                        <p className="mb-0">A powerful react app configured with Firebase Cloud Firestore. This application provides authentication
-                                                            for client's and contractor's data along with the ability to create and sign up for jobs.</p>
-                                    </span>
-                                </span>
-                                <img className="card-img-top" src={require('../../images/projects/bigscontracting.png')} alt="Card cap" />
-                                <div className="card-body">
-                                    <p className="card-text">Big's Contracting Agency</p>
-                                    <div className="d-flex justify-content-between align-items-center">
-                                        <a className="btn-group">
-                                        </a>
-                                        <small className="text-muted">03/18</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                        <a className="col-md-6 col-lg-4 animated fadeInLeft wow" href="https://coinglomerate.co" target="_blank" rel="noopener noreferrer">
-                            <div className="card mb-4 box-shadow zoom">
-                                <span className="caption">
-                                    <span className="caption-content align-middle m-auto">
-                                        <h2>Coinglomerate LLC</h2>
-                                        <p className="mb-0">A classic single page website built with HTML5, CSS, and JavaScript including
-                                                            interactive scrolling and animation.</p>
-                                    </span>
-                                </span>
-                                <img className="card-img-top" src={require('../../images/projects/coinglomerate.png')} alt="Card cap" />
-                                <div className="card-body">
-                                    <p className="card-text">Coinglomerate Mining Solutions</p>
-                                    <div className="d-flex justify-content-between align-items-center">
-                                        <a className="btn-group">
-                                        </a>
-                                        <small className="text-muted">12/17</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                        <a className="col-md-6 col-lg-4 animated zoomIn wow" href="https://andrewmahoneyf.github.io/SteppIR-Newsletter/" target="_blank" rel="noopener noreferrer">
+                        <a className="col-md-6 col-lg-4 animated fadeInLeft wow" href="https://andrewmahoneyf.github.io/SteppIR-Newsletter/" target="_blank" rel="noopener noreferrer">
                             <div className="card mb-4 box-shadow zoom">
                                 <span className="caption">
                                     <span className="caption-content align-middle m-auto">
@@ -160,7 +139,47 @@ class WebProjects extends React.Component {
                                 </div>
                             </div>
                         </a>
-                        <a className="col-md-6 col-lg-4 animated fadeInRight wow" href="https://steppir.com/" target="_blank" rel="noopener noreferrer">
+                        <a className="col-md-6 col-lg-4 animated zoomIn wow" href="https://bigscontracting.com/" target="_blank" rel="noopener noreferrer">
+                            <div className="card mb-4 box-shadow zoom">
+                                <span className="caption">
+                                    <span className="caption-content align-middle m-auto">
+                                        <h2>Big's Contracting Agency</h2>
+                                        <p className="mb-0">A powerful react app configured with Firebase Cloud Firestore. This application provides authentication
+                                                            for client's and contractor's data along with the ability to create and sign up for jobs.</p>
+                                    </span>
+                                </span>
+                                <img className="card-img-top" src={require('../../images/projects/bigscontracting.png')} alt="Card cap" />
+                                <div className="card-body">
+                                    <p className="card-text">Big's Contracting Agency</p>
+                                    <div className="d-flex justify-content-between align-items-center">
+                                        <a className="btn-group">
+                                        </a>
+                                        <small className="text-muted">03/18</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a className="col-md-6 col-lg-4 animated fadeInRight wow" href="https://coinglomerate.co" target="_blank" rel="noopener noreferrer">
+                            <div className="card mb-4 box-shadow zoom">
+                                <span className="caption">
+                                    <span className="caption-content align-middle m-auto">
+                                        <h2>Coinglomerate LLC</h2>
+                                        <p className="mb-0">A classic single page website built with HTML5, CSS, and JavaScript including
+                                                            interactive scrolling and animation.</p>
+                                    </span>
+                                </span>
+                                <img className="card-img-top" src={require('../../images/projects/coinglomerate.png')} alt="Card cap" />
+                                <div className="card-body">
+                                    <p className="card-text">Coinglomerate Mining Solutions</p>
+                                    <div className="d-flex justify-content-between align-items-center">
+                                        <a className="btn-group">
+                                        </a>
+                                        <small className="text-muted">12/17</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a className="col-md-6 col-lg-4 animated zoomIn wow" href="https://steppir.com/" target="_blank" rel="noopener noreferrer">
                             <div className="card mb-4 box-shadow zoom">
                                 <span className="caption">
                                     <span className="caption-content align-middle m-auto">

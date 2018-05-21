@@ -34,16 +34,22 @@ class Clients extends React.Component {
                     </a>
                     <a className="col-6 col-md-3 col-lg-2 align-middle my-auto logo" href="https://www.chartercoin.com/index.php" target="_blank" rel="noopener noreferrer">
                         <img src={require('../../images/clients/chartercoin.png')} className='w-100' alt="Client logo" />
-                    </a>
+                    </a>    
                     <a className="col-6 col-md-3 col-lg-2 align-middle my-auto logo" href="http://www.onpoint-properties.com/" target="_blank" rel="noopener noreferrer">
                         <img src={require('../../images/clients/onpoint.png')} className='w-100' alt="Client logo" />
                     </a>
                     <a className="col-6 col-md-3 col-lg-2 align-middle my-auto logo" href="https://bigscontracting.com/" target="_blank" rel="noopener noreferrer">
                         <img src={require('../../images/clients/bigscontracting.png')} className='w-100' alt="Client logo" />
                     </a>
+                    <a className="col-6 col-md-3 col-lg-2 align-middle my-auto logo" href="http://sideraconsult.com/" target="_blank" rel="noopener noreferrer">
+                        <img src={require('../../images/clients/sidera.png')} className='w-100' alt="Client logo" />
+                    </a>
                     <a className="col-6 col-md-3 col-lg-2 align-middle my-auto logo" href="https://coinglomerate.co/" target="_blank" rel="noopener noreferrer">
                         <img src={require('../../images/clients/coinglomerate.png')} className='w-100' alt="Client logo" />
                     </a>
+                    {/* <a className="col-6 col-md-3 col-lg-2 align-middle my-auto logo" href="https://intentional3d.com/" target="_blank" rel="noopener noreferrer">
+                        <img src={require('../../images/clients/i3D.png')} className='w-100' alt="Client logo" />
+                    </a> */}
                 </div>
                 <div className="py-5 text-muted animated bounceInUp wow">
                     <p className='mb-0'>View More</p>
@@ -194,6 +200,25 @@ class WebProjects extends React.Component {
                                         <a className="btn-group">
                                         </a>
                                         <small className="text-muted">10/17</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a className="col-md-6 col-lg-4 animated zoomIn wow" href="http://sideraconsult.com/" target="_blank" rel="noopener noreferrer">
+                            <div className="card mb-4 box-shadow zoom">
+                                <span className="caption">
+                                    <span className="caption-content align-middle m-auto">
+                                        <h2>Sidera Consult</h2>
+                                        <p className="mb-0">Updated WordPress site for the top trade consulting company in Brazil.</p>
+                                    </span>
+                                </span>
+                                <img className="card-img-top" src={require('../../images/projects/sidera.png')} alt="Card cap" />
+                                <div className="card-body">
+                                    <p className="card-text">Sidera Consult | Market Access &amp; Expansion</p>
+                                    <div className="d-flex justify-content-between align-items-center">
+                                        <a className="btn-group">
+                                        </a>
+                                        <small className="text-muted">08/17</small>
                                     </div>
                                 </div>
                             </div>

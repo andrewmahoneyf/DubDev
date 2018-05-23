@@ -1,7 +1,6 @@
 import React from 'react';
 import andrew from '../../images/andrew.png';
-import james from '../../images/james.jpg';
-
+import james from '../../images/James-profile.jpg';
 
 export default class Founders extends React.Component {
 
@@ -57,7 +56,7 @@ export default class Founders extends React.Component {
                 <p className="grey-text">Co-Founder / Lead Full-Stack Developer</p>
                 <p>James is a senior at the University of Washington and focuses on creating back-end solutions for clients. As a student, he received his certification for database management and has experience building a range of web applications from scratch.</p>
                 <ul className="list-unstyled">
-                  <a className="icons-sm fb-ic" href="https://github.com/Sanghawk" target="_blank" rel="noopener noreferrer">
+                  <a className="icons-sm fb-ic" href="https://github.com/Sanghawk" target="_blank" rel="noopener n  oreferrer">
                     <i className="fa fa-github blue-text"> </i>
                   </a>
                   <a className="icons-sm ins-ic" href="https://www.linkedin.com/in/james-lee-5a992a115/" target="_blank" rel="noopener noreferrer">
